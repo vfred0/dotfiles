@@ -9,7 +9,7 @@
 - Colorscheme: [Catppuccin Mocha](https://github.com/catppuccin/catppuccin)
 - Fonts: [Iosevka Nerd Font](https://www.nerdfonts.com/)/[SF Pro](https://developer.apple.com/fonts/)
 - WM: [chadwm](https://github.com/siduck/chadwm)
-- Terminal: [st](https://github.com/newmanls/st)
+- Terminal: [Alacritty](https://github.com/alacritty/alacritty)
   - Shell: [bash](https://www.gnu.org/software/bash/)
   - Prompt: [starship](https://starship.rs/)
   - Editor: [VSCode](https://code.visualstudio.com/)
