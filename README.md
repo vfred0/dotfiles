@@ -20,3 +20,5 @@
 - Media Player: [mpv](https://mpv.io/)
 - Document Viewer: [zathura](https://pwmt.org/projects/zathura/) ([mupdf](https://pwmt.org/projects/zathura-pdf-mupdf/))
 - Notification daemon: [dunst](https://dunst-project.org/)
+
+Thanks to [@newman](https://github.com/newmanls/dotfiles) for dotfiles inspiration.
