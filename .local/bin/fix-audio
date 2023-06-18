@@ -1,0 +1,1 @@
+killall pipewire pipewire-alsa pipewire-pulse; audio

@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+volume=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | tr -d '%')
+
+up(){ 
+    if [[ $volume -ge 100 ]]; then
+        pactl set-sink-volume @DEFAULT_SINK@ 100%    
+    else 
+        pactl set-sink-volume @DEFAULT_SINK@ "+10%"
+    fi    
+    
+}
+
+case $1 in
+    up) up ;;
+    down) pactl set-sink-volume @DEFAULT_SINK@ "-10%" ;;
+    mute)  pactl set-sink-mute @DEFAULT_SINK@ 'toggle' ;;
+esac
+
+volume=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | tr -d '%')
+is_muted=$(pactl get-sink-mute @DEFAULT_SINK@ | sed -n "s/Mute: //p")
+
+if [ "${is_muted}" = "yes" ]; then
+    volume="muted"
+    icon="audio-volume-muted-symbolic"
+elif (( volume == 0 )); then
+    icon="audio-volume-muted-symbolic"
+elif (( volume <= 30 )); then
+    icon="audio-volume-low-symbolic"
+elif (( volume <= 70 )); then
+    icon="audio-volume-medium-symbolic"
+else
+    icon="audio-volume-high-symbolic"
+fi
+
+
+# dunstify -a "volume" -u low -t 1000 -r 2593 -i "${icon}" "Volume: ${volume}%"
+sleep 0.05 && \
+notify-send \
+    "Volume: ${volume}%" \
+    -i "${icon}" \
+    -r 2593 \
+    -h string:x-dunst-stack-tag:volume && \
+setsid -f pw-play '/usr/share/sounds/Oxygen-Window-Maximize.ogg' > /dev/null 2>&1

@@ -1,0 +1,13 @@
+case $1 in
+    toggle) pactl set-source-mute @DEFAULT_SOURCE@ toggle ;;    
+esac
+
+is_muted=$(pactl get-source-mute @DEFAULT_SOURCE@ | awk '{print $2}')
+
+if [[ "$is_muted" == "yes" ]]; then
+    icon=""  
+else
+    icon=""      
+fi
+
+notify-send "Mute: ${is_muted}" -r 2593  -i audio-input-microphone
