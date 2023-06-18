@@ -13,11 +13,9 @@ active_window_id = subprocess.check_output(['xprop', '-root', '32x', '\t$0', '_N
 
 def exists(window_id) -> bool:
     return window_id != NO_WINDOW
-if exists(active_window_id):
-    window_title = subprocess.check_output(['xprop', '-id', active_window_id, '_NET_WM_NAME']).decode().split('"')[1]
-    title_parts = window_title.split('-')
-    last_part = title_parts[-1].strip()
-    print(last_part)
 
-else:
-    print(EMPTY_TITLE)
+window_title = subprocess.check_output(['xprop', '-id', active_window_id, 'WM_CLASS']).decode().split('"')[3]
+title_parts = window_title.split('-')
+title = title_parts[-1].strip()    
+title = title[0].lower() + title[1:]
+print(title)
