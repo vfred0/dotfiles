@@ -1,0 +1,13 @@
+#!/bin/bash
+
+current_sink=$(pactl info | grep "Default Sink" | awk '{print $3}')
+sink1="alsa_output.pci-0000_09_00.1.hdmi-stereo"
+sink2="alsa_output.pci-0000_09_00.6.analog-stereo"
+
+if [ "$current_sink" == "$sink1" ]; then
+    pactl set-default-sink "$sink2"
+    notify-send  -i "audio-volume-high-symbolic" "Sink Changed" "Changed to 󰋎" 
+else
+    pactl set-default-sink "$sink1"    
+    notify-send  -i "audio-volume-high-symbolic" "Sink Changed" "Changed to 󰍹"
+fi
