@@ -39,5 +39,5 @@ notify-send \
     "Volume: ${volume}%" \
     -i "${icon}" \
     -r 2593 \
-    -h string:x-dunst-stack-tag:volume && \
+    -h string:x-dunst-stack-tag:volume && 
 setsid -f pw-play '/usr/share/sounds/Oxygen-Window-Maximize.ogg' > /dev/null 2>&1

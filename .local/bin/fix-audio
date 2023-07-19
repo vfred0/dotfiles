@@ -1,1 +1,2 @@
-killall pipewire pipewire-alsa pipewire-pulse; audio
+killall pipewire pipewire-alsa pipewire-pulse wireplumber; audio
+notify-send  -i "audio-volume-high-symbolic" "Audio Restarted" "Successfully restarted audio"
