@@ -44,7 +44,7 @@ local options = {
     -- pause the playback when asking for chapter title
     pause_on_input = false,
     autoload = true,
-    autosave = false,
+    autosave = true,
     -- save all chapter files in a single global directory or next to the playback file
     global_chapters = false,
     chapters_dir = mp.command_native({"expand-path", "~~home/chapters"}),
@@ -403,7 +403,7 @@ local function write_chapters(...)
     -- figure out the directory
     local chapters_dir
     if options.global_chapters then
-        local dir = utils.file_info(options.chapters_dir)
+        local dir = utils.file_info(options.chapters_dir)        
         if dir then
             if dir.is_dir then
                 msg.debug("options.chapters_dir exists:", options.chapters_dir)
@@ -434,8 +434,9 @@ local function write_chapters(...)
         end
     end
 
-    local chapters_file_path = utils.join_path(chapters_dir, name .. ".ffmetadata")
-
+    local chapters_file_path = utils.join_path(chapters_dir, name .. ".ffmetadata")    
+  
+    
     msg.debug("opening for writing:", chapters_file_path)
     local chapters_file = io.open(chapters_file_path, "w")
     if chapters_file == nil then
@@ -443,18 +444,29 @@ local function write_chapters(...)
         return
     end
 
-    local success, error = chapters_file:write(construct_ffmetadata())
-    chapters_file:close()
+    local python_command = string.format("python /home/vfred0/.config/mpv/write_chapters.py \"%s\" \"%s\"", chapters_file_path, construct_ffmetadata())
+    local python_process = io.popen(python_command)
+    local python_output = python_process:read("*all")
+    python_process:close()
 
-    if success then
-        if osd then
-            mp.osd_message("Chapters written to:" .. chapters_file_path, 3)
-        end
-        return chapters_file_path
-    else
-        msg.error("error writing chapters file:", error)
-        return
+    if python_output ~= "" then
+        msg.error("could not write chapter data to file: " .. python_output)
     end
+    if osd then
+        mp.osd_message("Chapters written to:" .. chapters_file_path, 3)
+    end
+    return chapters_file_path    
+end
+
+function string.split(inputstr, sep)
+    if sep == nil then
+        sep = "%s"
+    end
+    local t = {}
+    for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+        table.insert(t, str)
+    end
+    return t
 end
 
 
@@ -522,8 +534,7 @@ local function bake_chapters()
     end
 
     local filename = mp.get_property("filename")
-    local output_name
-
+    local output_name    
     -- extract file extension
     local reverse_dot_index = filename:reverse():find(".", 1, true)
     if reverse_dot_index == nil then
@@ -538,11 +549,11 @@ local function bake_chapters()
             ext = "mkv"
         end
         output_name = filename:sub(1, dot_index) .. "chapters." .. ext
+        
     end
 
-    local file_path = mp.get_property("path")
-    local output_path = utils.join_path(utils.split_path(file_path), output_name)
-
+    local file_path = mp.get_property("path")        
+    local output_path = utils.join_path(utils.split_path(file_path), output_name)           
     local args = {"ffmpeg", "-y", "-i", file_path, "-i", chapters_file_path, "-map_metadata", "1", "-codec", "copy", output_path}
 
     msg.debug("args:", utils.to_string(args))
