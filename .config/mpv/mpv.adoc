@@ -1,0 +1,40 @@
+= Instalación de mpv 
+:hide-uri-scheme:
+
+* Descargar _mpv_ desde el siguiente https://mpv.io/installation[enlace].
+
+* Opcionalmente se puede añadir la ruta de instalación de _mpv_ al PATH de windows. 
+
+== Configuración de mpv
+=== Gestionar los capítulos de un video
+
+* En windows, creará o se deberá crear una carpeta en la ruta: C:\Users\%username%\AppData\Roaming\mpv
+* En linux, se deberá crear una carpeta en la ruta: ~/.config/mpv
+
+* Localizada la carpeta de configuración de _mpv_, se deberá lograr tener la siguiente estructura de carpetas:
+[source,bash]
+├── chapters.conf
+├── input.conf
+├── mpv.conf
+├── script-modules
+│   └── user-input-module.lua
+├── scripts
+│   ├── chapters.lua
+│   └── user-input.lua
+
+* Primero, descargar el script para los capítulos desde el siguiente https://github.com/mar04/chapters_for_mpv/tree/mar04/issue6[repositorio].
+
+* Segundo, descargar los scripts que son necesarios para los atajos de teclados, estos scripts se encuentran en éste https://github.com/CogentRedTester/mpv-user-input/tree/master[repositorio].
+
+* Por último crear los atajos de teclados, que para eso lo pueden hacer, creando el archivo _mpv.conf_ con el siguiente contenido:
+[source,bash]
+n       script-binding chapters/add_chapter
+ctrl+m  script-binding chapters/remove_chapter
+ctrl+.  script-binding chapters/edit_chapter
+N       script-binding chapters/write_chapters
+ctrl+,  script-binding chapters/bake_chapters
+
+
+* Para añadir más configuraciones a _mpv_, se puede consultar la siguiente https://wiki.archlinux.org/title/Mpv[documentación].
+
+* Lo que resta es reproducir un video con _mpv_ y pulsar los atajos de teclado que se han configurado. Cada vez que se guarda un capítulo, se creará un archivo con el nombre del video y la extensión _.ffmedata_.  Por ejemplo: video.mp4.ffmetadata
