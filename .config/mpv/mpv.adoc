@@ -26,7 +26,7 @@
 
 * Segundo, descargar los scripts que son necesarios para los atajos de teclados, estos scripts se encuentran en éste https://github.com/CogentRedTester/mpv-user-input/tree/master[repositorio].
 
-* Por último crear los atajos de teclados, que para eso lo pueden hacer, creando el archivo _mpv.conf_ con el siguiente contenido:
+* Por último crear los atajos de teclados, que para eso lo pueden hacer, creando el archivo _input.conf_ con el siguiente contenido:
 [source,bash]
 n       script-binding chapters/add_chapter
 ctrl+m  script-binding chapters/remove_chapter
