@@ -1,9 +1,7 @@
 # Screenshots
+![alt text](https://github.com/vfred0/dotfiles/blob/main/Images/Screenshots/screenshot01.png?raw=true)
+
 ![alt text](https://github.com/vfred0/dotfiles/blob/main/Images/Screenshots/screenshot02.png?raw=true)
-
-![alt text](https://github.com/vfred0/dotfiles/blob/main/Images/Screenshots/screenshot03.png?raw=true)
-
-![alt text](https://github.com/vfred0/dotfiles/blob/main/Images/Screenshots/screenshot04.png?raw=true)
 ## Details
 - Distro: [Artix Linux](https://artixlinux.org/)
 - Colorscheme: [Catppuccin Mocha](https://github.com/catppuccin/catppuccin)
