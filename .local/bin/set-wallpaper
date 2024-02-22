@@ -50,7 +50,7 @@ class SetWallpaper:
         return 1
                 
     def _update_wallpaper(self):
-        number_wallpaper_with_zero = str(self.__current_number_wallpaper)
+        number_wallpaper_with_zero = str(self.__current_number_wallpaper).zfill(2)
         wallpaper_path = f"{self.__wallpapers_path}/{number_wallpaper_with_zero}.{self.__extension}"
 
         with open(self.__xinitrc_path, "r") as file:
