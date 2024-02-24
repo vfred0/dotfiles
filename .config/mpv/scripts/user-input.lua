@@ -13,7 +13,7 @@ local opts = {
     font = "",
     -- Set the font size used for the REPL and the console. This will be
     -- multiplied by "scale."
-    font_size = 16,
+    font_size = 28,
 }
 
 options.read_options(opts, "user_input")
@@ -86,7 +86,7 @@ if platform == 'windows' then
 elseif platform == 'macos' then
     opts.font = 'Menlo'
 else
-    opts.font = 'monospace'
+    opts.font = 'Monaspace Neon'
 end
 
 local repl_active = false
