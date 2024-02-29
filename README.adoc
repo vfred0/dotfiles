@@ -1,0 +1,24 @@
+= Dotfiles
+:toc:
+:toc-title: Contents
+
+== Demostration
+video::https://github.com/vfred0/dotfiles/raw/main/Videos/Dotfiles.mp4[]
+
+== Details
+* Distro: link:https://artixlinux.org/[Artix Linux]
+* Colorscheme: link:https://github.com/catppuccin/catppuccin[Catppuccin Mocha]
+* Fonts: link:https://www.nerdfonts.com/[Iosevka Nerd Font]/link:https://developer.apple.com/fonts/[SF Pro]
+WM: link:https://github.com/siduck/chadwm[chadwm]
+Terminal: link:https://github.com/alacritty/alacritty[Alacritty]
+** Shell: link:https://www.gnu.org/software/bash/[bash]
+** Prompt: link:https://starship.rs/[starship]
+** Editor: link:https://code.visualstudio.com/[VSCode]
+** File Manager: link:https://wiki.archlinux.org/title/PCManFM[PCManFM]
+* Launcher: link:https://github.com/davatorium/rofi[rofi]
+* Web Browser: link:https://www.brave.com/[brave]
+* Media Player: link:https://mpv.io/[mpv]
+* Document Viewer: link:https://pwmt.org/projects/zathura/[zathura] (link:https://pwmt.org/projects/zathura-pdf-mupdf/[mupdf])
+* Notification daemon: link:https://dunst-project.org/[dunst]
+
+Thanks to link:https://github.com/newmanls/dotfiles[@newmanls] and link:https://github.com/kidp2h/dotfiles[@kidp2h] for dotfiles inspiration.
