@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-import os
-import subprocess
-import sys
-from enum import Enum
-import glob
-import time
 
+import sys
+from wallpaper.StaticWallpaper import StaticWallpaper
+from enum import Enum
 class CommandWallpaper(Enum):
     NEXT = "next"
     PREVIOUS = "previous"
@@ -14,65 +11,11 @@ class CommandWallpaper(Enum):
     def is_next(command):
         return command == CommandWallpaper.NEXT.value
 
-class SetWallpaper:     
-    def __init__(self):
-        self.__wallpapers_path = os.path.expanduser("~/Images/Wallpapers")
-        self.__xinitrc_path = os.path.expanduser("~/.xinitrc")
-        self.__extension = "jpg"
-        self.__command_to_apply_wallpaper = "xwallpaper --zoom"
-        self.__current_number_wallpaper = self._get_current_number_wallpaper()
-
-    def next_wallpaper(self):            
-        self.__current_number_wallpaper += 1        
-        if self._is_max_wallpaper():
-            self.__current_number_wallpaper = 1
-        self._update_wallpaper()
-
-    def _is_max_wallpaper(self):                
-        return self.__current_number_wallpaper > self._get_total_wallpapers()
-
-    def _get_total_wallpapers(self):
-        return len(glob.glob(f"{self.__wallpapers_path}/*.{self.__extension}"))
-
-    def previous_wallpaper(self):            
-        if self.__current_number_wallpaper > 1:
-            self.__current_number_wallpaper -= 1
-        else:
-            self.__current_number_wallpaper = self._get_total_wallpapers()
-        self._update_wallpaper()
-           
-
-    def _get_current_number_wallpaper(self):    
-        with open(self.__xinitrc_path, "r") as file:
-            for line in file.readlines():
-                if line.startswith(self.__command_to_apply_wallpaper):
-                    return int(line.split("/")[-1].split(".")[0])            
-        return 1
-                
-    def _update_wallpaper(self):
-        number_wallpaper_with_zero = str(self.__current_number_wallpaper).zfill(2)
-        wallpaper_path = f"{self.__wallpapers_path}/{number_wallpaper_with_zero}.{self.__extension}"
-
-        with open(self.__xinitrc_path, "r") as file:
-            lines = file.readlines()
-
-        with open(self.__xinitrc_path, "w") as file:
-            for line in lines:
-                if line.startswith(self.__command_to_apply_wallpaper):
-                    file.write(f"{self.__command_to_apply_wallpaper} {wallpaper_path}\n")                    
-                else:
-                    file.write(line)
-                
-        subprocess.run(["notify-send",  "-i", wallpaper_path, f"Changing wallpaper {self.__current_number_wallpaper} of {self._get_total_wallpapers()}"])
-        subprocess.run(["xwallpaper", "--zoom", wallpaper_path])
-    
-        
-RANDOM = "random"
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         if CommandWallpaper.is_next(sys.argv[1]):
-            SetWallpaper().next_wallpaper()
+            StaticWallpaper().next()
         else:
-            SetWallpaper().previous_wallpaper()        
+            StaticWallpaper().previous()        
     else:
         print("Uso: set-wallpaper [next|previous]")
