@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+PROMPT_COMMAND=__bash_prompt
+
+__bash_prompt() {
+    local LAST_EXITCODE=$?
+    local PROMPT_MODULES=('cwd' 'git' 'arrow')
+
+    declare -A COLORS=(
+        [black]='\[\e[1;30m\]'
+        [red]='\[\e[1;31m\]'
+        [green]='\[\e[1;32m\]'
+        [yellow]='\[\e[1;33m\]'
+        [blue]='\[\e[1;34m\]'
+        [purple]='\[\e[1;35m\]'
+        [cyan]='\[\e[1;36m\]'
+        [white]='\[\e[1;37m\]'
+        [reset]='\[\e[0m\]'
+    )
+
+    __prompt_cwd() {
+        PS1+="${COLORS[blue]}{\W}"
+    }
+
+    __prompt_git() {
+        which git > /dev/null 2>&1 || return 
+
+        local branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+
+        [ "$branch" ] || return
+
+        PS1+="${COLORS[white]} at ${COLORS[red]}$branch"
+
+        local is_dirty=$(git status --porcelain 2> /dev/null)
+
+        [ "$is_dirty" ] && PS1+="${COLORS[yellow]}φ "
+    }
+
+    __prompt_arrow() {
+        local arrow_color
+
+        [ $LAST_EXITCODE -ne 0 ] && arrow_color='red' || arrow_color='green'
+        # ▷  ∮ ∝ Ø φ § ↬ ⊡
+        PS1+="${COLORS[$arrow_color]} § "
+    }
+
+    PS1=""
+
+    for module in "${PROMPT_MODULES[@]}"; do __prompt_$module; done
+
+    PS1+="${COLORS[reset]}"
+}

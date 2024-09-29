@@ -1,0 +1,43 @@
+export PATH="$HOME/.local/bin:$PATH"
+#export JAVA_HOME="$HOME/Documents/jdks/jdk-17"
+#export PATH="$JAVA_HOME/bin:$PATH"
+#export ANDROID_HOME=$HOME/Android/Sdk
+#export PATH=$PATH:$ANDROID_HOME/platform-tools
+#export PATH=$PATH:$ANDROID_HOME/tools/bin
+#export PATH=$PATH:$ANDROID_HOME/emulator
+#export PATH=$PATH:$ANDROID_HOME/cmdline-tools 
+export _JAVA_AWT_WM_NONREPARENTING=1 
+#export PATH=$PATH:$HOME/flutter/bin
+. "$HOME/.config/bash/aliases"
+. "$HOME/.config/bash/prompt"
+
+# Shell options
+shopt -s autocd
+
+# Complete options
+complete -c man whereis which
+complete -cf sudo
+
+bind '"\C-p": history-search-backward'
+bind '"\C-n": history-search-forward'
+bind '"\eh": "\C-aman \C-e\n"'
+bind '"\es": "\C-asudo \C-e"'
+
+# Autostart X at login
+#if [ -z "${DISPLAY}" -a "${XDG_VTNR}" -eq 1 ]; then
+#    exec startx -- -keeptty > /tmp/startx.log 2>&1
+#fi
+
+export PNPM_HOME="/home/vfred0/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+eval "$(starship init bash)"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+export PATH=$PATH:/home/vfred0/.spicetify
