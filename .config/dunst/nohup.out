@@ -1,0 +1,30 @@
+CRITICAL: [dbus_cb_name_lost:1152] Cannot acquire 'org.freedesktop.Notifications': Name is acquired by 'dunst' with PID '5844'.
+WARNING: Setting vertical_padding in section global doesn't exist
+WARNING: Could not find theme Yaru
+WARNING: Could not find theme gnome
+CRITICAL: Source ID 35 was not found when attempting to remove it
+CRITICAL: Source ID 67 was not found when attempting to remove it
+CRITICAL: Source ID 74 was not found when attempting to remove it
+CRITICAL: Source ID 81 was not found when attempting to remove it
+CRITICAL: Source ID 88 was not found when attempting to remove it
+CRITICAL: Source ID 95 was not found when attempting to remove it
+CRITICAL: Source ID 163 was not found when attempting to remove it
+CRITICAL: Source ID 170 was not found when attempting to remove it
+CRITICAL: Source ID 214 was not found when attempting to remove it
+CRITICAL: Source ID 221 was not found when attempting to remove it
+CRITICAL: Source ID 265 was not found when attempting to remove it
+CRITICAL: Source ID 322 was not found when attempting to remove it
+CRITICAL: Source ID 360 was not found when attempting to remove it
+CRITICAL: Source ID 367 was not found when attempting to remove it
+CRITICAL: Source ID 374 was not found when attempting to remove it
+CRITICAL: Source ID 388 was not found when attempting to remove it
+CRITICAL: Source ID 403 was not found when attempting to remove it
+CRITICAL: Source ID 410 was not found when attempting to remove it
+CRITICAL: Source ID 425 was not found when attempting to remove it
+CRITICAL: Source ID 432 was not found when attempting to remove it
+CRITICAL: Source ID 447 was not found when attempting to remove it
+CRITICAL: Source ID 506 was not found when attempting to remove it
+CRITICAL: Source ID 550 was not found when attempting to remove it
+CRITICAL: Source ID 557 was not found when attempting to remove it
+CRITICAL: Source ID 583 was not found when attempting to remove it
+CRITICAL: Source ID 607 was not found when attempting to remove it

@@ -18,8 +18,6 @@ class LiveWallpaper(Wallpaper):
         number_wallpaper_with_zero = str(self._current_number_wallpaper).zfill(2)        
         with open(self._save_file_path, "w") as file:
             file.write(number_wallpaper_with_zero)              
-        subprocess.run(["killall", "xwinwrap"])        
-        subprocess.run(["xwinwrap", "-g", "1920x1080", "-un", "-fdt", "-ni", "-b", "-nf", "-ov", "--", "live-mpv", "WID", f"{self._wallpapers_path}/{number_wallpaper_with_zero}"])
-
-        
-
+        subprocess.run(["killall", "xwinwrap"])                          
+        subprocess.run(["xwinwrap", "-g", "1920x1080", "-un", "-fdt", "-ni", "-b", "-ov", "-nf", "--", "live-mpv", "WID", f"{self._wallpapers_path}/{number_wallpaper_with_zero}"])
+        subprocess.run(["notify-send",  f"Changing live wallpaper {self._current_number_wallpaper} of {self._get_total_wallpapers()}"])

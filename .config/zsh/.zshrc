@@ -1,9 +1,12 @@
-HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
+HISTFILE="${XDG_CONFIG_HOME}/zsh/history"
 HISTSIZE=1000
 SAVEHIST=1000
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+PATH="$PATH:$HOME/.dotnet/tools"
+#WARP_THEMES_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/warp-terminal/themes"
+WARP_THEMES_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/warp-terminal/themes"
 
-mkdir -p "${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
+##  mkdir -p "${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
 
 autoload -Uz colors && colors
 autoload -Uz compinit && compinit
@@ -53,8 +56,17 @@ zle -N zle-line-init
 
 set_cursor_beam
 
+export PNPM_HOME="/home/vfred0/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 eval "$(starship init zsh)"
 
 source "${XDG_CONFIG_HOME}/shell/aliasrc"
 source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+export PATH=$PATH:/home/vfred0/.spicetify

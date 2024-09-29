@@ -1,0 +1,1598 @@
+sudo rm -r docker
+btm
+docker images
+docker images h
+docker images help
+docker rm image 036
+remove-trash
+btm
+docker rm image 036
+docker images ls
+docker image ls
+elimina las images 2017-latest gothings y todas las none
+docker rmi mcr.microsoft.com/mssql/server:2017-latest gothings/backend:latest b0b90c1d9579 036f33292719 346622142e13 d0f9c8446158 1e819c55dc1e dfc26a434d8f 531a7da812cd 5bc099737d9a
+docker image ls
+btm
+docker c ps -a
+docker container ps -a
+ls
+docker compose up --build
+btm
+docker image ls
+docker images
+docker container ls
+dotnet-ef 
+dotnet ef database upodate
+dotnet ef database update
+docker container ps -a
+cd docker/
+docker compose up --build 
+docker compose up --build
+docker compose up --build
+cd
+cd -
+ /home/vfred0/Documents/Projects/form-builder/FormBuilder/
+docker compose up --build
+sudo rm -rf FormBuilder.Database/
+sudo rm -rf FormBuilder.Database/
+docker compose up --build
+docker compose help
+ls
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build 
+docker compose up --build
+docker compose up --build
+docker compose up --build
+killall picom
+start-picom
+cd Documents/Projects/form-builder/FormBuilder/
+ls
+docker compose up --build
+docker image ls
+docker rmi form-builder/backend mcr.microsoft.com/mssql/server
+docker rmi form-builder/backend mcr.microsoft.com/mssql/server -f
+btm
+docker container ls
+docker container ls -a
+docker container rm form-builder-backend form-builder-backend
+docker container rm form-builder-backend form-builder-backend -f
+docker container ls -a
+docker container rm -f 482
+docker container ls 
+docker container ls -a
+docker image ls -a
+docker image ls 
+docker compose up --build
+docker container rm 'f e79'
+docker container rm -f e79
+docker container rm -f e79
+docker compose up --build
+docker container rm -f form-builder-backend
+docker container rm -f form-builder-database
+service docker restart
+docker  container ls
+docker  container ls --all
+docker  container ls -a
+docker  container ls -ps
+docker  container ls -ps -a 
+docker  container ls -p -a
+docker  container ls -a
+docker  container -ps -a
+docker container ps -a
+docker container ps 
+docker images
+docker images rm --all
+docker images rm a74
+docker images --help
+docker rmi form-builder/backend:latest
+docker rmi mcr.microsoft.com/mssql/server:latest
+btm
+docker rmi form-builder/backend:latest\
+docker rmi mcr.microsoft.com/mssql/server:latest
+docker container ps
+docker compose up --build
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q) -f
+docker volume prune -f
+docker network prune -f
+docker system prune -a -f --volumes
+btm
+btm
+docker compose up --build
+btm
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+btm
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker compose up --build
+docker volume prune -f
+btm
+poweroff
+dbus-run-session startx
+mount-edu
+killall picom
+start-picom
+cd Documents/Projects/form-builder/FormBuilder/
+cd ..
+ls
+ng new gothings --minimal -p=form-builder-frontend --routing -S -s --style=scss
+ls
+cd FormBuilder.Persistence/
+dotnet-ef migrations add "initial-migrations"
+cd -
+dotnet-ef migrations add "initial-migrations"
+cd FormBuilder.Api/
+dotnet-ef migrations add "initial-migrations"
+dotnet-ef migrations add "initial-migrations"
+dotnet-ef migrations add "initial-migrations"
+dotnet-ef migrations add "initial-migrations"
+dotnet-ef migrations add "initial-migrations"
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef database update --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add EditAtributes --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations remove
+dotnet ef migrations remove --project ../FormBuilder.Persistence
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add RemovedFormStructureId --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add Refactor --project ../FormBuilder.Persistence --startup-project .
+cd
+cd '
+cd - 
+cd ../docker/
+docker composed up --build
+docker compose up --build
+dotnet ef migrations add Refactor --project ../FormBuilder.Persistence --startup-project .
+cd ../FormBuilder.Api/\
+
+dotnet ef migrations add Refactor --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add AddedFormStructureInput --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add InitialCreate --project ../FormBuilder.Persistence --startup-project .
+git log
+git filter-branch --env-filter '\
+    if [ "$GIT_COMMIT" = "163e8819cce9583ffbc3e053689ea9ccf05080e7" ]\
+    then\
+        export GIT_AUTHOR_DATE="2024-09-14T15:15:00.023+00:00"\
+        export GIT_COMMITTER_DATE="2024-09-14T15:15:00.023+00:00"\
+    fi\
+'
+git log
+git filter-branch --env-filter '\
+if [ $GIT_COMMIT = 163e8819cce9583ffbc3e053689ea9ccf05080e7 ]\
+then\
+    export GIT_AUTHOR_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+    export GIT_COMMITTER_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+fi\
+' -- 163e8819cce9583ffbc3e053689ea9ccf05080e7^..HEAD
+git log --pretty=format:"%h %ad %s" --date=iso 163e8819cce9583ffbc3e053689ea9ccf05080e7
+git log
+git log --pretty=format:"%h %ad %s" --date=iso 163e8819cce9583ffbc3e053689ea9ccf05080e7
+   export FILTER_BRANCH_SQUELCH_WARNING=1
+git filter-branch --env-filter '\
+if [ $GIT_COMMIT = 163e8819cce9583ffbc3e053689ea9ccf05080e7 ]\
+then\
+    export GIT_AUTHOR_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+    export GIT_COMMITTER_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+fi\
+' -- 163e8819cce9583ffbc3e053689ea9ccf05080e7^..HEAD
+git filter-branch --env-filter '\
+if [ $GIT_COMMIT = 163e8819cce9583ffbc3e053689ea9ccf05080e7 ]\
+then\
+    export GIT_AUTHOR_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+    export GIT_COMMITTER_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+fi\
+' -- 163e8819cce9583ffbc3e053689ea9ccf05080e7^..HEAD
+cd ..
+git filter-branch --env-filter '\
+if [ $GIT_COMMIT = 163e8819cce9583ffbc3e053689ea9ccf05080e7 ]\
+then\
+    export GIT_AUTHOR_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+    export GIT_COMMITTER_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+fi\
+' -- 163e8819cce9583ffbc3e053689ea9ccf05080e7^..HEAD
+git log
+git log
+   git filter-branch --env-filter '\
+   if [ $GIT_COMMIT = 163e8819cce9583ffbc3e053689ea9ccf05080e7 ]\
+   then\
+       export GIT_AUTHOR_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+       export GIT_COMMITTER_DATE="Sat Sep 14 13:18:20 2024 -0500"\
+   fi\
+   ' -- 163e8819cce9583ffbc3e053689ea9ccf05080e7^..HEAD
+git push
+git log
+git log
+git push origin main
+sudo rm -rf docker/
+git push origin main
+docker compose stop
+docker compose down
+ls
+ng new form-builder-frontend --minimal -p=form-builder --routing -S -s --style=scss
+gh repo create  --private form-builder-frontend
+gh repo create form-builder-frontend
+gh repo create form-builder-frontend --public
+git remote add origin git@github.com:vfred0/form-builder-frontend.git
+cd form-builder-frontend/
+git remote add origin git@github.com:vfred0/form-builder-frontend.git
+git branch -M main
+cursor .
+ng add @nebular/theme
+pnpm i @angular-eslint/builder @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/schematics @angular-eslint/template-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint
+pnpm i
+ng s
+pnpm install --save eva-icons @nebular/eva-icons\
+
+cd ..
+ng new form-builder-frontend-test --minimal -p=form-builder --routing -S -s --style=scss --no-standalone 
+pnpm install --save @nebular/theme @angular/cdk @angular/animations\
+
+pnpm i
+ng add @nebular/theme\
+
+ng add @nebular/theme@14.0.0
+pnpm install --save eva-icons @nebular/eva-icons
+pnpm install --save @nebular/theme @angular/cdk @angular/animations\
+
+pnpm install --save @nebular/theme@14 @angular/cdk @angular/animations
+killall picom; start-picom
+start-picom
+cd ..
+cd angular/gothings/src/ 
+pcmanfm .
+curl
+git push origin main
+ng g c pages/form-structure-management 
+ng g c pages/inputs-management --routing
+ng g c pages/inputs-management  help
+ng g c pages/inputs-management --interactive
+ng g interface core/dtos/form-structure.dto
+ng g interface core/dtos/form-structure-request.dto
+ng g interface core/dtos/form-structure-response.dto
+ng g interface core/dtos/form-structure-input.request
+ng g interface core/dtos/input-request
+ng g interface core/dtos/input-request.dto
+ng g interface core/dtos/input-response.dto
+ng g c pages/form-structure-management/new-form-structure
+ng g c pages/form-structure-management/udate-form-structure
+ng g c pages/form-structure-management/update-form-structure
+ng g c pages/form-structure-management/form-form-structure
+ng g c pages/input-management/input-list
+ng g c pages/input-management/form-input
+ng g c pages/input-management/input-management
+killall picom; start-picom
+killall picom; start-picom
+cat /etc/locale.conf 
+cat /etc/vconsole.conf 
+localectl list-keymaps
+yay locale
+yay localectl
+cat /etc/conf.d/keymaps 
+cat /etc/X11/xorg.conf.d/00-keyboard.conf 
+nv /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo nv /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo nvim /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo cp /etc/X11/xorg.conf.d/00-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
+service keymaps restart
+service keymaps restart
+service keymaps restart -f
+ng s
+ng s
+make-install
+make-install
+reboot
+dbus-run-session startx
+cd ../
+ls
+cd ..
+cd ..
+cd form-builder/
+ls 
+cd FormBuilder/
+ls
+docker compose up --build
+docker compose up
+cd Documents/Projects/angular/
+gh repo clone Raemy92/bsc-fps-training
+cursor bsc-fps-training/
+cd bsc-fps-training/
+pnpm i
+ng s
+ng s
+ng s
+ng s
+cd FormBuilder.Persistence/
+dotnet-ef migrations
+dotnet-ef migrations list
+dotnet-ef migrations list
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project 
+ls
+cd FormBuilder.Api
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project 
+history
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project 
+ls
+cd FormBuilder.Persistence
+cd ./FormBuilder.Persistence
+dotnet ef migrations --startup-project .
+dotnet ef migrations --startup-project
+dotnet-ef migrations 
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project 
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add FixedGuid --project ../FormBuilder.Persistence --startup-project .
+poweroff
+dbus-run-session startx
+update-system 
+echo $TERMINAL 
+make-install 
+make-install 
+nv .config/alacritty/
+cursor .config/alacritty
+flameshot 
+flameshot  gui
+update-system 
+update-system 
+update-system 
+update-system 
+btm
+sudo pacman -Syu
+yay -Syu
+flameshot --heko
+flameshot --help
+flameshot gui &
+flameshot launcher 
+flameshot config
+flameshot gui &
+dbus-run-session startx
+make-install 
+make-install 
+make-install 
+make-install 
+update-system 
+sudo rm -rf /var/lib/pacman/sync\
+sudo pacman -Syy
+update-system 
+sudo pacman -S yay
+yay 
+git clone https://aur.archlinux.org/yay-bin.git\
+
+cd yay-bin
+makepkg -si
+delete yay-bin
+delete yay-bin-debug
+delete yay-debug
+makepkg -si
+yay
+yay-bin 
+sudo pacman -R yay
+sudo pacman -R yay-bin
+yay
+yay-bin 
+makepkg -si
+yay
+cd /usr/lib/ && ln -s libalpm.so.14 libalpm.so.13
+sudo cd /usr/lib/ && ln -s libalpm.so.14 libalpm.so.13\
+
+sudo cd /usr/lib
+sudo cd /usr/lib/
+sudo ln ln -s libalpm.so.14 libalpm.so.13
+sudo ln -s libalpm.so.14 libalpm.so.13
+yaya
+yay
+sudo ln -s libalpm.so.14 libalpm.so.14
+yay
+sudo pacman -Rns yay yay-debug \
+
+sudo pacman -Rns yay-bin yay-debug \
+
+sudo pacman -Rns yay-bin yay-bin-debug \
+
+yay
+cd
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+export RUST_BACKTRACE=1
+makepkg -si
+cd 
+git clone https://aur.archlinux.org/paru-bin.git
+cd paru-bin
+makepkg -si
+paru
+reboot
+paru
+pacman -S --needed git base-devel\
+git clone https://aur.archlinux.org/yay.git\
+cd yay\
+makepkg -si
+yay
+pacman -S --needed git base-devel\
+git clone https://aur.archlinux.org/paru-bin.git\
+cd yay\
+makepkg -si
+cd
+pacman -S --needed git base-devel\
+git clone https://aur.archlinux.org/paru-bin.git\
+cd paru-bin\
+makepkg -si
+cd
+rm paru* -rf
+ls
+pacman -S --needed git base-devel\
+git clone https://aur.archlinux.org/paru-bin.git\
+cd paru-bin\
+makepkg -si
+cd
+update-system 
+find . -name "*.rar" -exec unrar x {} \;
+btm
+cd Documents/Projects/form-builder/FormBuilder
+;s
+ls
+cd FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+cd Documents/Projects/form-builder/FormBuilder
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+cd FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+cd DocumentsProjects/form-builder/FormBuilder/
+cd Documents/Projects/form-builder/FormBuilder/FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+cd Documents/Projects/form-builder/FormBuilder/FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+ng s
+nv .xinitrc
+dbus-run-session startx
+poweroff
+ng s
+dbus-run-session startx
+poweroff
+cd Documents/Projects/form-builder/FormBuilder/FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+cd Documents/Projects/form-builder/FormBuilder/FormBuilder.Api
+cd Documents/Projects/form-builder/FormBuilder/FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+cd Documents/Projects/form-builder/FormBuilder/FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+cd Documents/Projects/form-builder/FormBuilder/FormBuilder.Api
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+dotnet ef migrations add Initial --project ../FormBuilder.Persistence --startup-project .
+ng s
+ng s
+ng s
+ng s
+ng g i app/core/dtos/input-request.dto
+ng g c pages/form-data-management/form-data-management
+ng g c pages/form-data-management/
+ng g c pages/form-data-management/form-form-data
+ng g c pages/form-data-management/form-form-data
+ng g c pages/form-data-management/form-form-data --flat
+dotnet --version'
+dotnet --version
+ng s
+dbus-run-session startx
+poweroff
+ng version
+ng update
+ng --help
+ng update @angular/cli @angular/core
+pnpm i -g @angular/cli
+dbus-run-session startx
+update-system 
+poweroff
+sudo sensors
+sudo sensors-detect
+sensors
+install fancontrol-gui
+yay fancontrol
+sudo fancontrol-gui
+sudo fancontrol
+delete fancontrol
+delete fancontrol-gui
+install fancontrol
+install fancontrol-rc
+yay fancontrol
+yay fancontrol
+install freeimpi
+install freeipmi
+service fancontrol start
+service afancontrol start
+sensors
+sensors-detect
+sudo sensors-detect
+sensors
+delete afanctrfreeipmi
+fancontrol
+sudo rc-service fancontrol
+sudo rc-config add fancontrol
+delete afanctrol freeipmi
+delete afancontrol freeipmi
+gh copilot explain "sudo apt-get"\
+
+gh copilot
+gh extension install github/gh-copilot\
+
+gh copilot explain "sudo apt-get"\
+
+gh copilot -h
+gh copilot explain "how extract all files .rar with unrar'
+gh copilot explain "how extract all files .rar with unrar"
+gh copilot suggest "how extract all files .rar with unrar"
+ls
+gh copilot
+git copilot suggest 'get settings of fan controll installed'
+gh copilot suggest 'get settings of fan controll installed'
+sensors | grep fan
+cd Documents/Projects/angular
+ls
+gh repo clone cjosue15/async-validator
+cursor async-validator
+ng new --help
+cd Documents/Projects/angular
+ng new angular-template --minimal --routing -S -s --style=scss 
+pnpm i @angular-eslint/builder @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/schematics @angular-eslint/template-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint
+nv .eslintrc.json
+nv .pretierrc
+cursor
+cursor .
+cd angular-template
+ls
+cursor .
+cp ../.eslintrc.json .
+cp ../.pretierrc .
+pnpm i @angular-eslint/builder @angular-eslint/eslint-plugin @angular-eslint/eslint-plugin-template @angular-eslint/schematics @angular-eslint/template-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint
+cd ..
+ng new angular-template --minimal --routing -S -s --style=scss -t --help
+ng new angular-xtemplate --style=scss --routing=true --standalone=true -t false
+ng new angular-texmplate --minimal --routing -S -s --style=scss -t false
+code angular-texmplate
+bun i
+ng s
+ng s
+gh repo create angular-template --help
+gh repo create angular-template --public --source=. --remote=upstream
+git log
+git branch -M main
+git log
+gh copilot suggest 'delete last commit'
+gh copilot suggest 'delete last commit'
+git status
+for dir in app/*/ ; do touch "$dir.gitkeep"; done
+touch app/.gitkeep
+ls
+touch src/app/.gitkeep
+cd src
+for dir in app/*/ ; do touch "$dir.gitkeep"; done
+cd Documents/Projects/angular
+ng new nebular-ui-angular-template --minimal --routing -S -s --style=scss 
+gh repo create nebular-ui-angular-template --public --help
+gh repo create nebular-ui-angular-template --public -p vfred0/angular-template
+gh repo clone vfred0/nebular-ui-angular-template
+cd nebular-ui-angular-template
+ls
+ng add @nebular/theme
+ng add @nebular/theme@14.0.0
+pnpm install --save eva-icons @nebular/eva-icons\
+
+cursor .
+pnpm i
+ng s
+dbus-run-session startx
+poweroff
+remove-trash
+cd Documents/Projects/
+ls
+gh repo clone vfred0/form-builder-backend
+cd form-builder-backend
+docker compose up
+docker compose up
+docker volume ls
+docker volume rm form-builder_db-data
+docker volume rm form-builder_db-data -f
+docker volume rm form-builder_db-data --help
+docker volume rm form-builder_db-data --force
+docker container ps
+docker container ps -a
+docker volume ls
+docker volume rm form-builder_db-data --force
+gh copilot suggest 'docker volume rm form-builder_db-data --force\
+Error response from daemon: remove form-builder_db-data: volume is in use - [070c98ba29f42309a7a5620052a8edac763cd9491fd209e0a7e61ededb3974ec]'\ 
+gh copilot suggest 'docker volume rm form-builder_db-data --force\
+Error response from daemon: remove form-builder_db-data: volume is in use - [070c98ba29f42309a7a5620052a8edac763cd9491fd209e0a7e61ededb3974ec]'
+docker volume rm form-builder_db-data --force
+docker stop 070c98ba29f4
+docker volume rm form-builder_db-data --force
+docker rm 070c98ba29f4
+docker volume rm form-builder_db-data --force
+docker compose up 
+ls
+docker volume rm form-builder_db-data --force
+docker container ps 
+docker container ls
+docker container
+git status
+git pushl
+git push origin main
+cd Documents/Projects/form-builder-backend
+ls
+git pull
+docker volume rm form-builder_db-data --force
+docker container rm -f form-builder-database
+docker container rm -f form-builder-backend
+docker volume rm form-builder_db-data --force\\
+
+docker compose up
+docker image ls
+docker image rm 803
+docker volume prune -f
+docker volume --help
+docker volume prune
+docker volume prune
+docker image ls
+docker image dev
+docker image dfe
+docker image rm dfe
+easyeffects
+dbus-run-session startx
+poweroff
+mount-edu
+dbus-run-session startx
+poweroff
+dbus-run-session startx
+dbus-run-session startx
+poweroff
+yay droidcam
+dbus-run-session startx
+yay droidcam
+reboot
+cd DocumentsProjects/form-builder-fronted
+cd Documents/Projects/form-builder-fronted
+cd Documents/Projects/form-builder/form-builder-frontend
+pnpm i
+ng s
+dbu
+dbus-run-session startx
+cd Documents/Projects/form-builder/form-builder-frontend
+ng s
+poweroff
+update-system 
+cd Documents/Projects/form-builder/form-builder-backend
+cd Documents/Projects/form-builder/FormBuilder
+ls
+docker compose up
+bt,
+btm
+ng s
+rclone-upload-movies
+dbus-run-session startx
+poweroff
+btm
+nvm --version'\
+\
+'
+killall picom; start-picom
+killall picom; start-picom
+killall picom; start-picom
+killall picom; start-picom
+mount-edu
+mpv Clean\ Architecture\ Parte\ 2\ -\ Authentication\ y\ Authorization/*/*.mp4
+docker compose volume 
+docker volume ls
+docker volume rm form-builder_db-data --force\\
+
+docker volume rm form-builder_db-data --force
+docker container rm -f form-builder-backend
+docker container rm -f form-builder-database
+docker volume rm form-builder_db-data --force\\
+
+docker compose up 
+dbus-run-session startx
+poweroff
+delete droidcam
+mount-edu
+dbus-run-session startx
+poweroff
+dbus-run-session startx
+poweroff
+mount-edu
+lsblk
+ng s
+ng s
+gh repo clone skysoft-tech/sky-ui
+cd sky-ui
+ls
+bun i
+ng s 
+ng s
+cat package.json
+bun run start:dev-app
+rclone-upload-movies
+rclone-upload-movies
+mpv Curso\ Proceso\ de\ Desarrollo\ Ágil
+dbus-run-session startx
+poweroff
+mount-edu
+dbus-run-session startx
+poweroff
+update-system 
+remove-trash
+dbus-run-session startx
+reboot
+alias mount-hdd
+mount-hdd
+spicetify restore backup apply
+spicetify backup apply
+nvtop
+dbus-run-session startx
+reboot
+spotify
+rclone-copy-starred edu-unemi:SpringWebflux edu-unemi:test
+mount-edu
+nvtop
+nvtop
+docker ps -a
+mpv edu-unemi/Spring\ Webflux
+btm
+startx
+btm
+nvtop
+dbus-run-session startx
+reboot
+killall easyeffects
+easyeffects --gapplication-service &
+cat .xinitrc
+nohup easyeffects  --gapplication-service
+nohup easyeffects  --gapplication-service &
+btm
+nvtop
+nvtop
+mount-ed
+mount-edu
+mpv edu-unemi/Spring\ Webflux
+cursor .configalacritty
+cursor .config/alacritty
+killall easyeffects
+nohup easyeffects  --gapplication-service &
+nvtop
+killall easyeffects
+nohup easyeffects  --gapplication-service &
+mpv edu-unemi/Multimedia/Movies/The\ Dark\ Knight\ \(2008\)\ BDREMUX\ 4K.mkv
+mount-hdd
+lsblk
+btm
+btm
+btm
+remove-trash
+umount hdd
+sudo umount hdd
+sudo fsck -y /dev/sda
+sudo fsck -y /dev/sda
+mount-hdd
+lsblk
+sudo umount hdd
+ls hdd
+cd hdd/Videos
+ls
+ls Videos
+cd
+sudo fsck /dev/sda
+sudo badblocks -v /dev/sds
+sudo badblocks -v /dev/sda
+sudo fsck /dev/sda
+mount-hdd
+mkvtoolnix-gui edu-unemi/Multimedia/Movies/Batman\ 2012
+mkvtoolnix-gui edu-unemi/Batman\ 2012.mkv
+dbus-run-session startx
+cd edu-unemi/rclone/Escuela\ IT
+ls
+mpv Curso\ Proceso\ de\ Desarrollo\ Ágil
+mpv Curso\ Proceso\ de\ Desarrollo\ Ágil/
+mount-hdd
+mount-edu
+mpv edu-unemi/rclone/Escuela\ IT/Curso\ Proceso\ de\ Desarrollo\ Ágil
+mpv edu-unemi/rclone/Escuela\ IT/Curso\ de\ TDD
+poweroff
+mpv Videos/Upload/The\ Dark\ Knight\ Rises\ \(2012\)\ BDREMUX\ 4K.mkv
+cd
+mpv hdd/Videos/Videos/Joker\ \(2019\)\ IMAX\ BDREMUX\ x265\ 4K\ DV\ HDR10\ Dual\ Es-la\ En\ Subt\ Es-la\ En\ \[GDRIVELatinoHD.net\].mkv
+dbus-run-session startx
+cd Videos
+mkdir Upload
+mv The\ Dark\ Knight\ Rises\ \(2012\)\ BDREMUX\ 4K.mkv Upload
+rclone-upload-movies
+poweroff
+dbus-run-session startx
+reboot
+nvtop
+cat /usr/share/applications
+ls /usr/share/applications
+gh copilot suggest 'copy to clipboard all results from ls /usr/share/applications'
+ls /usr/share/applications | pbcopy
+ls /usr/share/applications | xclip -selection clipboard
+delete anydesk
+delete anydesk-bin
+blueberry
+cat /usr/share/applications/steam.desktop
+delete steam
+delete thunderbird
+nv /usr/share/applications/screenkey.desktop
+sudo nv /usr/share/applications/screenkey.desktop
+sudo nvim /usr/share/applications/screenkey.desktop
+sudo nvim /usr/share/applications/cursor.desktop
+ls /usr/share/applications | xclip -selection clipboard
+feh
+ls
+cat -.ffmetadata
+pcmanfm .
+python test
+desktop-hide
+sudo chmod u+x desktop-hide
+desktop-hide
+desktop-hide
+desktop-hide
+desktop-hide
+desktop-hide
+desktop-hide
+desktop-hide
+desktop-hide
+desktop-hide
+dbus-run-session startx
+cursor .local/bin
+poweroff
+mpv https://www.twitch.tv/videos/2242460932?filter=archives&sort=time
+install streamlink
+streamlink --player mpv https://www.twitch.tv/videos/2242460932?filter=archives&sort=time
+streamlink --player mpv 'https://www.twitch.tv/videos/2242460932?filter=archives&sort=time'
+streamlink  'https://www.twitch.tv/videos/2242460932?filter=archives&sort=time'
+streamlink  'https://www.twitch.tv/videos/2242460932?filter=archives&sort=time'--help
+streamlink --help
+streamlink -p mpv 'https://www.twitch.tv/videos/2242460932?filter=archives&sort=time' best
+streamlink -p mpv 'https://www.twitch.tv/videos/2244150079?filter=archives&sort=timestreamlink -p "mpv --start=600" 'https://www.twitch.tv/videos/2244150079?filter=archives&sort=time' best\
+' best
+streamlink -p "mpv --start=600" 'https://www.twitch.tv/videos/2244150079?filter=archives&sort=time' best\
+
+mpv --help
+streamlink -p "mpv --start=00:05:00" 'https://www.twitch.tv/videos/2244150079?filter=archives&sort=time' best\
+
+mpv --start=00:10:00 $(streamlink --stream-url 'https://www.twitch.tv/videos/2244150079?filter=archives&sort=time' best)\
+
+nvim
+mpv --start=00:10:00 $(streamlink --stream-url 'https://www.twitch.tv/videos/2246723298?filter=archives&sort=time' best)\
+
+mpv --start=00:10:00 $(streamlink --stream-url 'https://www.twitch.tv/videos/2248417182?filter=archives&sort=time' best)\
+
+mpv --start=00:10:00 $(streamlink --stream-url 'https://www.twitch.tv/videos/2252631119?filter=archives&sort=time' best)\
+
+cd hdd/Videos
+ls
+cd Videos
+ls
+cd ..
+pcmanfm .
+rclone-upload-movies
+mount-hdd
+dbus-run-session startx
+poweroff
+cd Videos
+ls
+mkdir Upload
+mv The\ Batman\ \(2022\)\ BDREMUX\ 4K.mkv Upload
+rclone-upload-movies
+dbus-run-session startx
+mpv Videos/The\ Batman\ \(2022\)\ BDREMUX\ 4K.mkv
+poweroff
+sudo sensors-detect
+sudo sensors
+btm
+dbus-run-session startx
+poweroff
+btm
+sudo sensors-detect
+sudo sensors
+ping 1.1.1.1
+sudo nvim /usr/share/applications/connman-gtk.desktop
+install coolercontrol-bin
+install coolercontrol-bin
+update-system 
+update-system 
+install coolercontrol-bin
+yay coolercontrol
+service coolercontrold start
+service coolercontrol start
+cat .xinitrc
+/usr/bin/coolercontrold &
+sudo /usr/bin/coolercontrold &
+gn2.7|Diosmedavida
+sudo /usr/bin/coolercontrold 
+install corectl
+yay corectl
+yay corectrl
+corectrl
+/usr/bin/corectrl
+/usr/bin/corectrl --help
+corectrl
+yay vulkanifo
+install vulkan-tools
+corectrl
+vulkainfo
+vulkanifo 
+vulkaninfo
+corectrl
+cat /tmp/CoreCtrl
+cat /tmp/CoreCtrl.log
+delete corectrl
+delete coolercontrol-bin
+delete coolercontrol-bin-debug
+delete coolercontrold-bin-debug 
+install fancontrol-gui
+/usr/bin/fancontrol
+delete fancontrol-gui fancontrol-gui-debug
+install  fan2go-git
+fan2go detect
+sudo mkdir /etc/fan2go\
+
+sudo nvim /etc/fan2go/fan2go.yaml\
+
+fan2go detect
+sudo fan2go detect
+sudo nvim /etc/fan2go/fan2go.yaml\
+
+sudo fan2go detect
+cat /tmp/file_fan
+cat /etc/fan2go/fan2go.yaml
+sudo sensors-detect
+sudo sensors
+ls  /sys/class/hwmon
+sensors -u 
+btm
+fan2go
+sudo fan2go
+sudo nvim /etc/fan2go/fan2go.yaml\
+
+sudo fan2go
+sudo nvim /etc/fan2go/fan2go.yaml\
+
+sudo fan2go
+yay coolerctrl
+yay coolercontrol
+yay coolercontrol
+/usr/bin/coolercontrold
+sudo /usr/bin/coolercontrold
+sudo /usr/bin/coolercontrold
+delete fancontrol-gui fancontrol-gui-debug
+delete coolercontrold-bin-debug 
+delete coolercontrol-bin
+delete coolercontrol*
+delete coolercontrol-*
+delete coolercontrol-bin-debug 
+delete fan2go-git
+fancontrol
+delete fancontrol
+delete fancontrol-bin
+delete fancontrol-gui
+/usr/bin/fancontrol
+dvbus-run-session startx
+dbus-run-session startx
+powe
+poweroff
+dbus-run-session startx
+dbus-run-session startx
+poweroff
+dbus-run-session startx
+nvtop
+redshift --help
+redshift -h
+redshift -b
+redshift -v
+killall redshift
+nv .xinitrc
+cursor .local/bin
+dbus-run-session startx
+poweroff
+cd Videos
+unzip OneDrive_1_9-24-2024.zip
+pip install metagpt
+mkdir test
+cd tes
+cd test
+python -m venv env
+ls 
+source env/bin/activate
+pip install metagpt
+metagpt 
+pip list
+pip install distutils
+install python-setuptools
+install python-distutils-extra
+pip install metagpt
+exit
+btm
+pip install metagpt
+install python-metagpt
+install python-pipx
+pipx install metagpt
+pip --version
+python -v
+python --version
+pipx install --upgrade metagpt\
+
+pip install --upgrade metagpt\
+
+cd test
+source env/bin/activate
+pip install --upgrade metagpt\
+
+pip install setuptools\
+
+pip install --upgrade metagpt\
+
+metagpt 
+pip list
+python3 -m pip install setuptools\
+
+pip cache purge
+gh repo clone geekan/MetaGPT
+cd MetaGPT
+cd metagpt
+ls
+python startup.py
+python startup.py "write a cli tictactoe game"
+python startup.py "write a cli tictactoe game"
+ls
+cat startup.py
+python software_company.py "write a cli tictactoe game"
+ls
+cd ..
+ls
+pip install -r requirements.txt
+python software_company.py "write a cli tictactoe game"
+cd metagpt
+python software_company.py "write a cli tictactoe game"
+pip list
+cd 
+cd 
+cd 
+exit
+pip list
+cd workspace
+ls
+cd ,,
+cd ..
+install aichat
+aichat
+aichat
+aichat -e list ts files
+aichat --help
+aichat -m
+nv .config/aichat/config.yaml
+aichat
+rm .config/aichat/config.yaml
+aichat
+aichat
+aichat -e list ts files
+ls
+cd Documents/Projects/form-builder/form-builder-frontend
+aichat -e list ts files
+aichat -e remove all files with ts
+aichat -e find and remove all files ts
+aichat -e find and remove all files ts
+export WORKSPACE_BASE=$(pwd)/workspace\
+
+echo $WORKSPACE_BASE
+docker run -it --pull=always \\
+    -e SANDBOX_RUNTIME_CONTAINER_IMAGE=ghcr.io/all-hands-ai/runtime:0.9-nikolaik \\
+    -e SANDBOX_USER_ID=$(id -u) \\
+    -e WORKSPACE_MOUNT_PATH=$WORKSPACE_BASE \\
+    -v $WORKSPACE_BASE:/opt/workspace_base \\
+    -v /var/run/docker.sock:/var/run/docker.sock \\
+    -p 3000:3000 \\
+    --add-host host.docker.internal:host-gateway \\
+    --name openhands-app-$(date +%Y%m%d%H%M%S) \\
+    ghcr.io/all-hands-ai/openhands:0.9
+btm
+docker rm -f $(docker ps -a -q)\
+
+docker rmi -f $(docker images -q)\
+
+btm
+docker volume prune
+ls wor
+ls workspace
+cd workspace
+cd 
+docker pull metagpt/metagpt:latest\
+
+mkdir -p /opt/metagpt/{config,workspace}\
+
+sudo mkdir -p /opt/metagpt/{config,workspace}\
+
+docker run --rm metagpt/metagpt:latest cat /app/metagpt/config/config2.yaml > /opt/metagpt/config/config2.yaml\
+
+sudo docker run --rm metagpt/metagpt:latest cat /app/metagpt/config/config2.yaml > /opt/metagpt/config/config2.yaml\
+
+sudo docker run --rm metagpt/metagpt:latest cat /app/metagpt/config/config2.yaml > /opt/metagpt/config/config2.yaml\
+
+sudo rm /opt/metagpt -rf
+touch xx.yaml
+docker run --rm metagpt/metagpt:latest cat /app/metagpt/config/config2.yaml > xx.yaml
+cat xx.yaml
+nvim xx.yaml
+aichat -e rename xx.yaml to config2.yaml
+ls
+docker run --rm \\
+    --privileged \\
+    -v config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+sudo mkdir -p /opt/metagpt/{config,workspace}\
+
+cp config2.yaml /opt/metagpt/config
+sudo cp config2.yaml /opt/metagpt/config
+docker run --rm \\
+    --privileged \\
+    -v /opt/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v /opt/metagpt/workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+sudo nvim /opt/metagpt/config/config2.yaml
+docker run --rm \\
+    --privileged \\
+    -v /opt/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v /opt/metagpt/workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+sudo nvim /opt/metagpt/config/config2.yaml
+docker run --rm \\
+    --privileged \\
+    -v /opt/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v /opt/metagpt/workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+sudo nvim /opt/metagpt/config/config2.yaml
+docker run --rm \\
+    --privileged \\
+    -v /opt/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v /opt/metagpt/workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+sudo nvim /opt/metagpt/config/config2.yaml
+docker run --rm \\
+    --privileged \\
+    -v /opt/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v /opt/metagpt/workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+sudo nvim /opt/metagpt/config/config2.yaml
+docker run --rm \\
+    --privileged \\
+    -v /opt/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v /opt/metagpt/workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+btm
+dbus-run-session startx
+poweroff
+edit-alias
+btm
+docker run --rm \\
+    --privileged \\
+    -v /opt/metagpt/config/config2.yaml:/app/metagpt/config/config2.yaml \\
+    -v /opt/metagpt/workspace:/app/metagpt/workspace \\
+    metagpt/metagpt:latest \\
+    metagpt "Write a cli snake game"
+docker rmi -f $(docker images -q)\
+
+docker rmi -f $(docker container -q)\
+
+docker rm -f $(docker ps -a -q)\
+
+docker ps -a
+docker ps
+docker container ls
+docker volume rm $(docker volume ls -q)\
+
+docker system prune -a --volumes\
+
+btm
+pcma
+sudo rm workspace
+sudo rm workspace -rf
+poweroff
+dbus-run-session startx
+dotfiles status
+dotfiles add .config/picom/picom.conf
+dotfiles status
+dotfiles-commit 'refactor'
+dotfiles-push
+poweroff
+cd Videos
+rclone-copy edu-unemi:rclone/Escuela\ IT/'Curso de arquitectura de aplicaciones frontend con React' 'Curso de arquitectura de aplicaciones frontend con React'
+mpv Curso\ de\ arquitectura\ de\ aplicaciones\ frontend\ con\ React
+nv .Xresources
+xrdb -merge .Xresources
+nv .Xresources
+xrdb -merge .Xresources
+nv .Xresources
+xrdb -merge .Xresources
+nv .Xresources
+xrdb -merge .Xresources
+mount-edu
+cd edu-unemi/rclone/Escuela\ IT
+cd Curso\ de\ Arquitectura\ Hexagonal,\ DDD,\ Microservicios\ y\ CQRS
+ls
+python -m http.server
+mpv 3\ -\ DDD\ domain\ driven\ design.mp4
+mpv 3\ -\ DDD\ domain\ driven\ design.mp4
+ls
+cd Recursos
+ls
+cd Material\ completo\ curso\ Hexagonal
+python -m http.server
+rclone-upload-courses
+cd Videos
+rclone-upload-courses
+rclone-upload-movies
+rclone-upload-courses
+rclone-upload-courses
+nv .Xresources
+xrdb -merge .Xresources
+dbus-run-session startx
+mpv Videos/Curso\ de\ arquitectura\ de\ aplicaciones\ frontend\ con\ React/
+poweroff
+cd Documents/Projects/
+ls
+ls angular
+mv angular/gothings .
+ls
+cd gothings
+ls
+pcmanfm \\
+
+ls
+cd ..
+ls
+cd gothings
+cd gothings-frontend
+ls
+pnpm configure --help
+pnpm configure get store-dir
+pnpm
+pnpm list
+ls
+git rm -r *
+ls
+git rm -r *
+ls
+ls -a
+git l
+git rm -r *
+git status
+git status
+git checkout -b react-implementation
+git checkout react-implementation
+git status
+git checkout signal-inputs
+git status
+git push origin main
+pwd
+cp .git ../gothings-frontend2
+cp .git ../gothings-frontend2 -r
+cp .git ../gothings-frontend2/ -r
+sudo cp .git ../gothings-frontend2/ -r
+ls
+ls -a ../gothings-frontend2
+ls
+cat README.adoc
+rm * -rf
+ls
+bun create vite@latest
+ls
+bun create vite@latest --help
+mv gothings/* .
+rm gothings -r
+ls
+bun i
+bun i -SE
+pnpm i -SE
+bun i -E
+bun run dev
+git branch -m main angular-implementation\
+git fetch origin\
+git branch -u origin/angular-implementation angular-implementation\
+git remote set-head origin -a
+nv .git/config
+ls
+cd ..
+ls
+mkdir test
+cd Documents/Projects/
+cd gothings/test
+ls
+gh repo clone vfred0/gothings-frontend
+cd gothings-frontend/
+ls
+bun i
+bun link my-pkg-name-from-package-json
+code .
+ls -a
+cd ..
+rm -rf gothings-frontend
+gh repo clone vfred0/gothings-frontend
+cd gothings-frontend
+ls
+pnpm i -E
+pnpm help install
+pnpm help inst
+pnpm i --save-exact
+pnpm i
+pnpm add -g pnpm
+pnpm i
+ng s
+ls
+bun i 
+bun dev
+bun install eslint eslint-plugin-react -DE
+bun i
+bun del
+bun dev
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+bun lint
+dbus-run-session startx
+poweroff
+dbus-run-session startx
+poweroff
+mount-edu
+dbus-run-session startx
+install thunderbird
+dbus-run-session startx
+poweroff
+dbus-run-session startx
+services list
+service list
+rc-service --help
+rc-service --list
+rc-service --list
+sudo su
+dbus-run-session startx
+poweroff
+cat /etc/vconsole.conf
+cfdisk
+cfdisk /dev/sda
+cfdisk /dev/nvme0
+sudo cfdisk /dev/nvme0
+sudo cfdisk /dev/disk/by-label/ROOT
+cfdisk
+sudo su
+lsblk
+lsblk
+lsblk
+lsblk
+lsblk
+make-instal
+make-install
+connmanctl
+connmanctl
+lsblk
+connmanctl
+connmanctl
+service connmanctl status
+service connmanctl status
+service connmand healthcheck
+service connmand start
+nano
+nvim /etc/pacman.conf 
+nvim /etc/locale.gen\
+
+sudo su
+useradd --help
+cat /etc/hostname
+nvim /etc/hostname
+cat /etc/hosts
+cat /etc/conf.d/hostname
+nvim /etc/sudoers
+sudo nvim /etc/sudoers
+sudo su
+iwd
+iwd
+iw 
+poweroff
+dbus-run-session startx
+update-system 
+cat audio
+cat .local/bin/audio
+cat .xinitrc
+dbus-run-session startx
+reboot
+lspci -k
+lspci -k | grep wifi
+lspci -k | grep WiFi
+lspci -k | grep W
+ip link
+ip link show wlan0
+cd .local/share/fonts
+cd ..
+pcmanfm
+cd
+connmanctl
+sudo dmesg | grep firmware
+sudo dmesg | grep firmware
+ip link 
+iw
+sudo su
+ls /usr/share/fonts
+ls .local/share/fonts
+cd .local/share/fonts
+rm monaspace-v1.000.zip
+cd 
+dotfiles add .local/bin/fonts
+dotfiles add ~/.local/share/fonts
+dotfiles-commit 'Added fonts'
+dotfiles-push\\
+
+dotfiles-push -f\
+
+sudo su
+connmanctl
+yay iw-openrc
+yay iw
+service --list
+iw dev
+sudo iw dev wlan0 scan | less
+dbus-run-session startx
+service --list
+install wpa_supplicant
+install libreoffice-fresh
+delete libreoffice-fresh
+dbus-run-session startx
+delete dhcpcd
+delete dhclient
+reboot
+service --list
+install iwd
+install iw
+delete iw
+iw
+pacman -S wpa_supplicant
+nvim /etc/pacman.conf
+nvim /etc/pacman.conf
+ls .config
+lspci
+dotfiles-add .local/share/fonts
+dotfiles-commit 'Added fonts'
+dotfiles-push -f\
+
+dotfiles-add .local/share/fonts
+dotfiles-commit 'Added fonts'
+dotfiles-push -f\
+
+cd .config/chadwm
+ls
+cat make-alias
+alias make-alias
+alias make-install
+cd .config/chadwm
+make-install
+cd 
+nvim .xinitrc
+cat .config/rofi
+nv .config/rofi
+alias install
+cat .bashrc
+ls .bashrc
+ls -al
+yay  pipewire
+yay -S libwireplumber libpipewire wireplumber pipewire-session-manager pipewire-pulse pipewire-audio pipewire-alsa pipewire-jack pipewire easyeffects pipewire-pulse-openrc pipewire-openrc
+alias delete 
+yay brave-beta
+service --list
+rc-update -v show
+cat .xinitrc
+cat .xinitrc
+service pipewire status'
+service pipewire status
+service-update add pipewire default
+cat .xinitrc
+cd Documents
+ls
+pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | tr -d '%'
+pactl set-sink-volume @DEFAULT_SINK@ +20%
+pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | tr -d '%'
+sudo rc-service pipewire status
+sudo rc-service /usr/bin/pipewire status
+sudo rc-service --list
+sudo rc-update show
+install pipewire-openrc
+yay artix-pipewire-loader
+yay wireplumber
+pactl info
+cat .xinitrc
+sudo rc-service pipewire status
+sudo rc-service wireplumber status
+sudo rc-service pipewire-pulse status
+pactl
+pactl list
+yay pipewire-alsa
+cat audio
+cat .local/bin/audio
+cd .local/bin
+ls
+cat volume
+ls .local/bin
+ls .local/bin -al
+ls -al
+cat .bashrc
+ls .bashrc -a
+ls .bashrc -al
+cat .bashrc
+dotfiles-add .local/share/fonts
+dotfiles-push -f\
+
+ls -al
+cat -al status-bar
+ls -al status-bar
+cd .local/bin
+ls -al
+cat status-bar
+cat .xinitrc
+nvim /usr/share/applications/lxappearance.desktop
+sudo nvim /usr/share/applications/lxappearance.desktop
+dotfiles status
+dotfiles reset
+dotfiles status
+dotfiles-add .local/bin
+cat .xinitrc
+nvim .xinitrc

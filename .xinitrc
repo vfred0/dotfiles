@@ -1,12 +1,17 @@
-setxkbmap es &
+#resolution-2k &
+#fix-resolution &
+xrandr --output HDMI-A-1 --mode 1920x1080 --rate 100 &
+#setxkbmap es &
 xsetroot -cursor_name left_ptr &
-audio &
-redshift &
+#redshift &
+xwallpaper --zoom /home/vfred0/Images/Wallpapers/Statics/07.jpg
+xrdb -merge ~/.Xresources &
 status-bar &
-set-wallpaper Images/Wallpapers/29.jpg &
-xrandr -s 1920x1080 &
-xwallpaper --zoom /home/vfred0/Images/Wallpapers/14.jpg
-#telegram-desktop &
+/usr/bin/wireplumber &
+easyeffects  --gapplication-service &
 picom &
+dunst &
+flameshot &
+#exec zwm
+# live-wallpaper next &
 while type dwm >/dev/null; do dwm && continue || break; done
-#exec dwm

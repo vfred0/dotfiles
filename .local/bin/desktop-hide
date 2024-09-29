@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+
+import os
+import subprocess
+import sys
+
+# .Desktop Programs Hider
+files_to_keep = [
+    "/usr/share/applications/Alacritty.desktop",
+    "/usr/share/applications/blueberry.desktop",
+    "/usr/share/applications/brave-browser-beta.desktop",
+    "/usr/share/applications/code.desktop",
+    "/usr/share/applications/com.github.wwmm.easyeffects.desktop",
+    "/usr/share/applications/com.obsproject.Studio.desktop",
+    "/usr/share/applications/firefox.desktop",
+    "/usr/share/applications/koodo-reader.desktop",
+    "/usr/share/applications/koreader.desktop",
+    "/usr/share/applications/mpv.desktop",
+    "/usr/share/applications/nsxiv.desktop",
+    "/usr/share/applications/nvim.desktop",
+    "/usr/share/applications/nvtop.desktop",
+    "/usr/share/applications/obsidian.desktop",
+    "/usr/share/applications/org.flameshot.Flameshot.desktop",
+    "/usr/share/applications/org.mozilla.Thunderbird.desktop",
+    "/usr/share/applications/org.pwmt.zathura.desktop",
+    "/usr/share/applications/org.qbittorrent.qBittorrent.desktop",
+    "/usr/share/applications/org.rncbc.qtractor.desktop",
+    "/usr/share/applications/org.telegram.desktop.desktop",
+    "/usr/share/applications/pcmanfm.desktop",
+    "/usr/share/applications/redshift-gtk.desktop",
+    "/usr/share/applications/simplescreenrecorder.desktop",
+    "/usr/share/applications/spotify.desktop",
+    "/usr/share/applications/steam.desktop",
+    "/usr/share/applications/virt-manager.desktop",
+    "/usr/share/applications/screenkey.desktop",
+    "/usr/share/applications/cursor.desktop",
+
+]
+
+state = "true" 
+
+files_to_hide = [
+    os.path.join('/usr/share/applications', f)
+    for f in os.listdir('/usr/share/applications')
+    if f.endswith('.desktop') and os.path.join('/usr/share/applications', f) not in files_to_keep
+]
+
+for file in files_to_hide:
+    if os.path.isfile(file):
+        with open(file, 'r') as f:
+            content = f.read()
+        
+        if 'NoDisplay=' in content:
+            new_content = '\n'.join(
+                [f'NoDisplay={state}' if line.startswith('NoDisplay=') else line 
+                 for line in content.split('\n')]
+            )
+        else:
+            new_content = f"{content.rstrip()}\nNoDisplay={state}"
+        
+        subprocess.run(['sudo', 'tee', file], input=new_content.encode(), stdout=subprocess.DEVNULL)
+
+# Pacman Hook to persist after updates
+hooks_dir = "/etc/pacman.d/hooks"
+hook_file = "/etc/pacman.d/hooks/99-desktop-hide.hook"
+
+if not os.path.exists(hooks_dir):
+    subprocess.run(['sudo', 'mkdir', '-p', hooks_dir])
+
+if not os.path.exists(hook_file):
+    hook_content = '''[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Hide specific .desktop files
+When = PostTransaction
+Exec = /usr/bin/python ~/.local/bin/desktop-hide
+'''
+    subprocess.run(['sudo', 'tee', hook_file], input=hook_content.encode(), stdout=subprocess.DEVNULL)
+
+print("Script executed successfully.")

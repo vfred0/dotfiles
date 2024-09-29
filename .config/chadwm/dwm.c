@@ -27,6 +27,7 @@
 #include <X11/Xutil.h>
 #include <X11/cursorfont.h>
 #include <X11/keysym.h>
+#include <X11/XF86keysym.h>
 #include <errno.h>
 #include <locale.h>
 #include <signal.h>
@@ -363,8 +364,10 @@ static int xerror(Display *dpy, XErrorEvent *ee);
 static int xerrordummy(Display *dpy, XErrorEvent *ee);
 static int xerrorstart(Display *dpy, XErrorEvent *ee);
 static void zoom(const Arg *arg);
+static void incnmaster_alltags(const Arg *arg);
+static void gettags(Client *c, unsigned int *tags);
 
-char *getclientname(Client *c);
+// char *getclientname(Client *c);
 static void warp(const Client *c);
 
 
@@ -407,6 +410,7 @@ static Window root, wmcheckwin;
 #define hiddenWinStackMax 100
 static int hiddenWinStackTop = -1;
 static Client* hiddenWinStack[hiddenWinStackMax];
+//static const int NUMBER_WINDOWS = 1; 
 
 /* configuration, allows nested code to access above variables */
 #include "config.h"
@@ -1505,12 +1509,8 @@ void drawbar(Monitor *m) {
     w = TEXTW(tags[i]);
     drw_setscheme(drw, scheme[occ & 1 << i ? (m->colorfultag ? tagschemes[i] : SchemeSel) : SchemeTag]);
     drw_text(drw, x, y, w, bh_n, lrpad / 2, tags[i], urg & 1 << i);
-    if (ulineall ||
-        m->tagset[m->seltags] &
-            1 << i) /* if there are conflicts, just move these lines directly
-                       underneath both 'drw_setscheme' and 'drw_text' :) */
-        drw_rect(drw, x + ulinepad, bh_n - ulinestroke - ulinevoffset,
-               w - (ulinepad * 2), ulinestroke, 1, 0);
+    if (ulineall || m->tagset[m->seltags] &1 << i) 
+        drw_rect(drw, x + ulinepad, bh_n - ulinestroke - ulinevoffset, w - (ulinepad * 2), ulinestroke, 1, 0);
     /*if (occ & 1 << i) 
       drw_rect(drw, x + boxs, y + boxs, boxw, boxw,
                m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
@@ -1532,10 +1532,10 @@ void drawbar(Monitor *m) {
   if (w > bh_n) {
     if (m->sel) {
       drw_setscheme(drw, scheme[m == selmon ? SchemeTitle : SchemeNorm]);          
-     	drw_text(drw, x+200, 0, 40, bh, lrpad / 2 + (m->sel->icon ? m->sel->icw + ICONSPACING : 0), getclientname(m->sel), 0);
-			if (m->sel->icon) drw_pic(drw, x+200 + lrpad / 2, (bh - m->sel->ich) / 2, m->sel->icw, m->sel->ich, m->sel->icon);
-      if (m->sel->isfloating)
-        drw_rect(drw, x + boxs, boxs, boxw, boxw, m->sel->isfixed, 0);
+     	// drw_text(drw, x+135, 0, 40, bh, lrpad / 2 + (m->sel->icon ? m->sel->icw + ICONSPACING : 0), getclientname(m->sel), 0);
+			// if (m->sel->icon) drw_pic(drw, x+135 + lrpad / 2, (bh - m->sel->ich) / 2, m->sel->icw, m->sel->ich, m->sel->icon);
+      // if (m->sel->isfloating)
+      //   drw_rect(drw, x + boxs, boxs, boxw, boxw, m->sel->isfixed, 0);
     } else {
       drw_setscheme(drw, scheme[SchemeNorm]);
       if(floatbar){
@@ -1571,37 +1571,37 @@ void drawbar(Monitor *m) {
 // }
 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <ctype.h>
 
-#define MAX_BUFFER_SIZE 256
+// #define MAX_BUFFER_SIZE 256
 
-char *getclientname(Client *c) {
-    char *command = "python .config/chadwm/window_title.py";
-    char buffer[MAX_BUFFER_SIZE];
+// char *getclientname(Client *c) {
+    //char *command = "python .config/chadwm/window_title.py";
+    //char buffer[MAX_BUFFER_SIZE];
 
-    FILE *fp = popen(command, "r");
-    if (fp == NULL) {
-        return "N/A";
-    }
+//    FILE *fp = popen(command, "r");
+  //  if (fp == NULL) {
+    //    return "N/A";
+    //}
 
-    fgets(buffer, sizeof(buffer), fp);
-    pclose(fp);
+    //fgets(buffer, sizeof(buffer), fp);
+    //pclose(fp);
 
-    char *name = strdup(buffer);
-    if (name == NULL) {
-        return "N/A";
-    }
+//    char *name = strdup(buffer);
+  //  if (name == NULL) {
+    //    return "N/A";
+    //}
 
     // Remove trailing newline character
-    char *newline = strchr(name, '\n');
-    if (newline) {
-        *newline = '\0';
-    }
+//    char *newline = strchr(name, '\n');
+  //  if (newline) {
+    //    *newline = '\0';
+    //}
 
-    return name;
-}
+//     return 0;
+// }
 
 
 static uint32_t prealpha(uint32_t p) {
@@ -2008,17 +2008,25 @@ void grabbuttons(Client *c, int focused) {
 void grabkeys(void) {
   updatenumlockmask();
   {
-    unsigned int i, j;
-    unsigned int modifiers[] = {0, LockMask, numlockmask,
-                                numlockmask | LockMask};
-    KeyCode code;
-
+		unsigned int i, j, k;
+    unsigned int modifiers[] = { 0, LockMask, numlockmask, numlockmask|LockMask };
+    int start, end, skip;
+		KeySym *syms;
     XUngrabKey(dpy, AnyKey, AnyModifier, root);
-    for (i = 0; i < LENGTH(keys); i++)
-      if ((code = XKeysymToKeycode(dpy, keys[i].keysym)))
-        for (j = 0; j < LENGTH(modifiers); j++)
-          XGrabKey(dpy, code, keys[i].mod | modifiers[j], root, True,
-                   GrabModeAsync, GrabModeAsync);
+		XDisplayKeycodes(dpy, &start, &end);
+		syms = XGetKeyboardMapping(dpy, start, end - start + 1, &skip);
+		if (!syms)
+			return;
+		for (k = start; k <= end; k++)
+			for (i = 0; i < LENGTH(keys); i++)
+				/* skip modifier codes, we do that ourselves */
+				if (keys[i].keysym == syms[(k - start) * skip])
+					for (j = 0; j < LENGTH(modifiers); j++)
+						XGrabKey(dpy, k,
+							 keys[i].mod | modifiers[j],
+							 root, True,
+							 GrabModeAsync, GrabModeAsync);
+		XFree(syms);
   }
 }
 
@@ -2056,7 +2064,7 @@ hide(Client *c) {
 	arrange(c->mon);
 }
 
-void incnmaster(const Arg *arg) {
+void incnmaster(const Arg *arg) {  
   selmon->nmaster = selmon->pertag->nmasters[selmon->pertag->curtag] = MAX(selmon->nmaster + arg->i, 0);
   arrange(selmon);
 }
@@ -2744,7 +2752,7 @@ void run(void) {
   XSync(dpy, False);
   while (running && !XNextEvent(dpy, &ev))
     if (handler[ev.type])
-      handler[ev.type](&ev); /* call handler */
+      handler[ev.type](&ev); /* call handler */  
 }
 
 void scan(void) {
@@ -3058,8 +3066,33 @@ void setup(void) {
   XChangeWindowAttributes(dpy, root, CWEventMask | CWCursor, &wa);
   XSelectInput(dpy, root, wa.event_mask);
   grabkeys();
-  focus(NULL);
+  focus(NULL);  
+  incnmaster_alltags(&(Arg){.i=+NUMBER_WINDOWS});
 }
+
+void gettags(Client *c, unsigned int *tags) {
+  int i;
+  
+  for(i=0; i < LENGTH(tags); i++) {
+    tags[i] = 0;
+  } 
+  
+  for(i = 0; i < LENGTH(tags); i++) {
+    if((c->tags >> (i + 1) ) & 1) {
+      tags[i] = c->tags;
+    }
+  }
+}
+
+void incnmaster_alltags(const Arg *arg) {
+  incnmaster(&(Arg){.i=+arg->i});
+  int i;
+  for(i = 0; i < LENGTH(tags); i++) {
+    selmon->pertag->nmasters[i] = MAX(selmon->pertag->nmasters[i] + arg->i, 0);
+    arrange(selmon);
+  } 
+}
+
 void
 setviewport(void){
 	long data[] = { 0, 0 };

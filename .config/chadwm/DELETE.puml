@@ -1,0 +1,53 @@
+@startuml xx
+skinparam backgroundColor #222222
+skinparam shadowing false
+skinparam padding 1
+hide circle
+hide stereotype
+skinparam arrow {
+    Thickness 2
+    Color #DarkGrey
+    FontSize 20
+    FontName courier
+    FontStyle normal
+    FontColor #DarkGrey
+}
+skinparam rectangle {
+    BorderThickness 3
+    BorderColor #FFFFFF
+    BackgroundColor #222222
+    FontSize 20
+    FontName courier
+    FontStyle bold
+    FontColor #FFFFFF
+}
+skinparam node {
+    BorderThickness 3
+    BorderColor #FFFFFF
+    BackgroundColor #222222
+    FontSize 20
+    FontName courier
+    FontStyle bold
+    FontColor #FFFFFF
+}
+skinparam component {
+    BorderThickness 3
+    BorderColor<<a>> #1E90FF
+    BorderColor<<b>> #DC143C
+    BackgroundColor #222222
+    FontSize 20
+    FontName courier
+    FontStyle bold
+    FontColor #FFFFFF
+}
+node Hardware {
+component Compilador
+rectangle Codigo
+rectangle CIL
+component Interprete
+}
+
+Compilador ..> Codigo
+Compilador ..> CIL
+Interprete ..> CIL
+@enduml

@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+import sys
+import subprocess
+from typing import Literal, Union
+
+TEMPERATURE_FILE = '/tmp/redshift_temp'
+DEFAULT_TEMPERATURE = 6500
+STEP = 500
+MIN_TEMPERATURE = 1000
+MAX_TEMPERATURE = 10000
+
+Action = Literal["increase", "decrease"]
+
+def read_current_temperature() -> int:
+    try:
+        with open(TEMPERATURE_FILE, 'r') as f:
+            return int(f.read().strip())
+    except FileNotFoundError:
+        return DEFAULT_TEMPERATURE
+
+def calculate_temperature(current_temperature: int, action: Action) -> int:
+    temperature = current_temperature + STEP if action == "increase" else current_temperature - STEP
+    return max(MIN_TEMPERATURE, min(temperature, MAX_TEMPERATURE))
+
+def save_temperature(temperature: int) -> None:
+    subprocess.run(["killall", "redshift"])
+    subprocess.run(["redshift", "-x", "-P", "-O", str(temperature), "-b", "1"])
+    with open(TEMPERATURE_FILE, 'w') as f:
+        f.write(str(temperature))
+
+def adjust_temperature(action: Action) -> None:
+    temperature = calculate_temperature(read_current_temperature(), action)
+    save_temperature(temperature)
+
+def main() -> None:
+    if len(sys.argv) != 2 or sys.argv[1] not in ("increase", "decrease"):
+        print("Usage: python temperature.py [increase|decrease]")
+        sys.exit(1)
+    
+    adjust_temperature(sys.argv[1])
+
+if __name__ == "__main__":
+    main()

@@ -31,7 +31,8 @@ static const int colorfultag        = 1;        /* 0 means use SchemeSel for sel
 static const int new_window_attach_on_end = 0; /*  1 means the new window will attach on the end; 0 means the new window will attach on the front,default is front */
 #define ICONSIZE 26   /* icon size */
 #define ICONSPACING 10 /* space between icon and title */
-static const char *fonts[] = {"Iosevka:style:bold:size=10", "JetBrainsMono Nerd Font:style:bold:size=8" };
+static const char *fonts[] = {"Iosevka:style:bold:size=10" };
+static const int NUMBER_WINDOWS = 2; 
 
 #define FOCUSONCLICK 1
 #include "themes/catppuccin.h"
@@ -82,9 +83,19 @@ static const Rule rules[] = {
      *	WM_NAME(STRING) = title
      */
     /* class      instance    title       tags mask     iscentered   isfloating   monitor */
-    // { "Gimp",     NULL,       NULL,       0,            0,           1,           -1 },
-    // { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1 },
-    { "Gcr-prompter",     NULL,       NULL,       0,       1,           1,           -1 },
+    { "easyeffects",NULL, NULL, 0, 1, 1, -1 },
+    { "Alacritty", NULL, NULL, 0, 1, 1, -1 },
+    { "Pcmanfm", NULL, NULL, 0, 1, 1, -1 },
+    { "obs", NULL, NULL, 0, 1, 1, -1 },
+    { "dev.warp.Warp", NULL, NULL, 0, 1, 1, -1 },
+    { "mpv", NULL, NULL, 0, 1, 1, -1 },
+    { "mkvtoolnix-gui", NULL, NULL, 0, 1, 1, -1 },
+    { "Lxappearance", NULL, NULL, 0, 1, 1, -1 },
+    { "Zathura", NULL, NULL, 0, 1, 1, -1 },
+    { "livecaptions", NULL, NULL, 0, 1, 1, -1 },
+    { "TelegramDesktop", NULL, NULL, 0, 1, 1, -1 },
+    { "qBittorrent", NULL, NULL, 0, 1, 1, -1 },
+    // { "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1 },    
 
  //   { "eww",      NULL,       NULL,       0,            0,           1,           -1 },
 };
@@ -133,18 +144,26 @@ static const Key keys[] = {
     /* modifier                         key         function        argument */
 
     { MODKEY,                           XK_c,       spawn,          SHCMD("rofi -show drun") },
-    { MODKEY,                           XK_Return,  spawn,          SHCMD("alacritty")},
-    {MODKEY | ControlMask,              XK_0,       spawn,          SHCMD("volume mute")},
-    {MODKEY | ControlMask,              XK_minus,   spawn,          SHCMD("volume down")},
-    {MODKEY | ControlMask,              XK_plus,    spawn,          SHCMD("volume up")},
+    { MODKEY,                           XK_Return,  spawn,          SHCMD("$TERMINAL")},
+    {0, XF86XK_AudioMute,       spawn,          SHCMD("volume mute")},
+    {0, XF86XK_AudioLowerVolume, spawn, SHCMD("volume down")},
+    {0, XF86XK_AudioRaiseVolume,    spawn,          SHCMD("volume up")},
+    {0, XF86XK_MonBrightnessUp,    spawn,          SHCMD("temperature increase")},
+    {0, XF86XK_MonBrightnessDown,    spawn,          SHCMD("temperature decrease")},
+    {0, XF86XK_AudioNext, spawn, SHCMD("playerctl next")},
+    {0, XF86XK_AudioPlay, spawn, SHCMD("playerctl play-pause")},
+    {0, XF86XK_AudioPrev, spawn, SHCMD("playerctl previous")},
     {MODKEY | ControlMask,              XK_p,       spawn,          SHCMD("toggle-sink")},
     {MODKEY | ControlMask,              XK_f,       spawn,          SHCMD("fix-audio")},
+    {MODKEY | ControlMask,              XK_l,       spawn,          SHCMD("livecaptions")},
     {MODKEY | ShiftMask | ControlMask,              XK_n,       spawn,          SHCMD("set-wallpaper next")},
     {MODKEY | ShiftMask | ControlMask,              XK_p,       spawn,          SHCMD("set-wallpaper previous")},    
+    {MODKEY | ShiftMask | ControlMask,              XK_comma,       spawn,          SHCMD("live-wallpaper next")},
+    {MODKEY | ShiftMask | ControlMask,              XK_period,       spawn,          SHCMD("live-wallpaper previous")},    
     // get XK for F12     
     {MODKEY,                            XK_F11,       spawn,          SHCMD("setxkbmap es")},
-    {MODKEY,                            XK_F12 ,       spawn,          SHCMD("start-picom")},
-    {NULL,                              XK_Print,   spawn,          SHCMD("flameshot gui")},
+    {MODKEY,                            3 ,       spawn,          SHCMD("start-picom")},
+    {0,                              XK_Print,   spawn,          SHCMD("flameshot gui")},
 
     // toggle stuff^^
     { MODKEY,                           XK_b,       togglebar,      {0} },

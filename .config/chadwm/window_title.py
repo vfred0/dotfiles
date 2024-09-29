@@ -13,9 +13,12 @@ def exists(window_id) -> bool:
 desktop_entry_name = subprocess.check_output(['xprop', '-id', active_window_id, 'WM_CLASS']).decode().split('"')[1]
 
 desktop_entry_path = PATH_USR + desktop_entry_name + '.desktop'
-if not os.path.exists(desktop_entry_path):    
-    desktop_entry_path = PATH_USR_LOCAL + desktop_entry_name + '.desktop'    
-
+if not os.path.exists(desktop_entry_path):        
+    desktop_entry_name = subprocess.check_output(['xprop', '-id', active_window_id, 'WM_CLASS']).decode().split('"')[3]    
+    # os.system('notify-send -r 1 "' + desktop_entry_name + '"')
+    desktop_entry_path = PATH_USR + desktop_entry_name + '.desktop'
+    # desktop_entry_path = PATH_USR_LOCAL + desktop_entry_name + '.desktop'    
+   
 with open(desktop_entry_path, 'r') as f:    
     for line in f:
         if line.startswith('Name='):

@@ -1,1 +1,4 @@
- xrandr -s 800x600; xrandr -s 1920x1080
+xrandr -s 1920x1080; xrandr -s 2560x1440
+
+# xrandr --output HDMI-A-1 --mode "2560x1440" --set "scaling mode" "Full aspect"
+ 

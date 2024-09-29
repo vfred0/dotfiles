@@ -27,9 +27,6 @@ class StaticWallpaper(Wallpaper):
                 if line.startswith(self.__command_to_apply_wallpaper):
                     file.write(f"{self.__command_to_apply_wallpaper} {wallpaper_path}\n")                    
                 else:
-                    file.write(line)
-                    
-        print(f"Changing wallpaper {self._current_number_wallpaper} of {self._get_total_wallpapers()} command: {self.__command_to_apply_wallpaper} {wallpaper_path}")
-            
+                    file.write(line)                                    
         subprocess.run(["notify-send",  "-i", wallpaper_path, f"Changing wallpaper {self._current_number_wallpaper} of {self._get_total_wallpapers()}"])
         subprocess.run(["xwallpaper", "--zoom", wallpaper_path])
