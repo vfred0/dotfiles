@@ -1,0 +1,14 @@
+include themes/catppuccin
+
+set n-completion-items  8
+set font                'Iosevka Nerd Font 10'
+set guioptions          s
+set page-padding        8
+set recolor             true
+set recolor-keephue     true
+set statusbar-basename  true
+set zoom-center         true
+set selection-clipboard clipboard
+
+map H exec "demo '$FILE' $PAGE"
+
