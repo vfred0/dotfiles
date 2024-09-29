@@ -1,0 +1,87 @@
+{
+  "editor.fontFamily": "'Monaspace Neon Medium'",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.fontWeight": "500",
+  "editor.mouseWheelZoom": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.inlineSuggest.enabled": true,
+
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "workbench.iconTheme": "Mihale",
+  "debug.openDebug": "openOnDebugBreak",
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    // remove comentaries on close widget
+    "editor.comments.ignoreEmptyLines": true,
+  },
+  "dart.automaticCommentSlashes": "none",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },  
+  "workbench.sideBar.location": "right",
+  "plantuml.exportFormat": "svg",
+  "plantuml.exportOutDir": "/images",
+  "window.menuBarVisibility": "hidden",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "workbench.editorAssociations": {
+    "*.pdf": "default"
+  },
+  "git.autofetch": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true
+  },
+ 
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.location": "top",
+  "files.autoSave": "afterDelay",
+  "[html][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.smoothScrolling": true,
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "plantuml.exportConcurrency": 10,
+  "plantuml.diagramsRoot": "/docs",
+  "plantuml.exportSubFolder": false
+}
