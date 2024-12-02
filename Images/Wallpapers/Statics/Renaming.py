@@ -17,13 +17,13 @@ class Renaming:
 
     def __rename_wallpapers(self):
         files = os.listdir(os.getcwd())
-        jpg_files = [f for f in files if f.endswith('.jpg')]
+        jpg_files = [f for f in files]
         jpg_files.sort(key = lambda x: self.__extract_number(x))
         
 
         for i, filename in enumerate(jpg_files, start=1):
             print(f"File: {filename}")            
-            new_name = f'{str(i).zfill(2)}.jpg'                         
+            new_name = f'{str(i).zfill(2)}'                         
             os.rename(filename, new_name)
                          
             
