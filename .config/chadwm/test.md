@@ -1,0 +1,354 @@
+## Plan de Vacaciones en Ecuador (8 días y 7 noches)
+### Itinerario detallado día a día
+
+---
+
+### **Día 1: Viernes (Guayaquil → Loja)**
+**Tiempo de estadía: 16 horas**
+
+#### **Transporte:**
+* **Ruta:** Guayaquil → Loja
+* **Operador:** Cooperativa Loja Internacional
+* **Tipo:** Bus ejecutivo con aire acondicionado
+* **Horario:**
+   * Salida: 8:00 AM (Terminal Terrestre de Guayaquil)
+   * Llegada: 4:00 PM (Terminal Terrestre de Loja)
+* **Duración:** 8 horas
+* **Precio:** $25 por persona
+* **Frecuencia:** Cada 2 horas
+* **Tip:** Reservar asientos del lado derecho para mejores vistas
+
+#### **Actividades cronometradas:**
+* 4:00 PM - 4:30 PM: Traslado al hotel
+* 4:30 PM - 5:30 PM: Check-in Hotel Libertador y descanso
+* 5:30 PM - 7:30 PM: Paseo por Parque Central y Catedral
+* 7:30 PM - 9:00 PM: Cena en Mama Lola
+* 9:00 PM - 11:00 PM: Caminata nocturna guiada
+
+#### **Alojamiento:**
+* **Hotel:** Hotel Libertador
+* **Categoría:** 3 estrellas
+* **Precio:** $40/noche (habitación doble)
+* **Incluye:** Desayuno continental, WiFi
+* **Ubicación:** Centro histórico
+* **Tip:** Solicitar habitación con vista a la ciudad
+
+---
+
+### **Día 2: Sábado (Loja → Vilcabamba → Cuenca)**
+**Tiempo total: Loja/Vilcabamba 7 horas + Cuenca noche**
+
+#### **Transporte 1:**
+* **Ruta:** Loja → Vilcabamba
+* **Operador:** Cooperativa Sur Oriente
+* **Tipo:** Bus regular
+* **Horario:**
+   * Salida: 7:00 AM (Terminal de Loja)
+   * Llegada: 7:45 AM (Terminal Vilcabamba)
+* **Duración:** 45 minutos
+* **Precio:** $2.50 por persona
+* **Frecuencia:** Cada hora
+* **Tip:** No requiere reserva previa
+
+#### **Transporte 2:**
+* **Ruta:** Vilcabamba → Cuenca
+* **Operador:** Cooperativa Loja Internacional o Viajeros
+* **Tipo:** Bus ejecutivo
+* **Horario:**
+   * Salida: 2:00 PM (Terminal Vilcabamba)
+   * Llegada: 6:00 PM (Terminal Terrestre Cuenca)
+* **Duración:** 4 horas
+* **Precio:** $15 por persona
+* **Frecuencia:** 2 veces al día
+* **Tip:** Comprar boletos con anticipación
+
+#### **Actividades cronometradas:**
+* 6:00 AM - 7:00 AM: Desayuno en hotel Loja
+* 7:45 AM - 9:45 AM: Caminata Valle de Longevidad
+* 10:00 AM - 11:00 AM: Almuerzo orgánico
+* 11:15 AM - 1:15 PM: Ruta del Agua
+* 6:30 PM - 7:30 PM: Check-in hotel Cuenca
+* 8:00 PM - 9:30 PM: Cena en centro histórico
+
+#### **Alojamiento:**
+* **Hotel:** Mansión Alcázar
+* **Categoría:** 4 estrellas
+* **Precio:** $85/noche
+* **Incluye:** Desayuno buffet, WiFi, amenidades de lujo
+* **Ubicación:** Centro histórico de Cuenca
+* **Tip:** Solicitar habitación en el edificio histórico
+
+### **Día 3: Domingo (Cuenca)**
+**Tiempo de estadía: 24 horas completas**
+
+#### **Actividades cronometradas:**
+* 7:00 AM - 8:30 AM: Desayuno buffet en hotel
+* 9:00 AM - 11:00 AM: Tour en bicicleta por centro histórico
+* 11:30 AM - 1:30 PM: Visita Catedral y Mercado Flores
+* 1:30 PM - 3:00 PM: Almuerzo en Mercado 10 de Agosto
+* 3:30 PM - 6:30 PM: Museo Pumapungo y jardines ancestrales
+* 7:00 PM - 9:00 PM: Taller de cerámica
+* 9:00 PM - 10:30 PM: Cena y sunset en Mirador de Turi
+
+#### **Tours incluidos:**
+* **Tour en bicicleta:**
+   * Operador: Cuenca Bike Tours
+   * Precio: $25 por persona
+   * Incluye: Bicicleta, casco, guía bilingüe
+   * Tip: Llevar agua y protector solar
+
+* **Taller de cerámica:**
+   * Ubicación: Barrio de artesanos
+   * Precio: $30 por persona
+   * Incluye: Materiales y pieza para llevar
+   * Reserva: Necesaria con 24h anticipación
+
+#### **Alojamiento:**
+* Continúa en Mansión Alcázar
+
+---
+
+### **Día 4: Lunes (Cuenca → Ingapirca → Riobamba)**
+**Tiempo: Ingapirca 5 horas + Riobamba tarde/noche**
+
+#### **Transporte 1:**
+* **Ruta:** Cuenca → Ingapirca
+* **Operador:** Cooperativa Cañar
+* **Tipo:** Bus turístico
+* **Horario:**
+   * Salida: 7:00 AM (Terminal Cuenca)
+   * Llegada: 8:30 AM (Ingapirca)
+* **Duración:** 1.5 horas
+* **Precio:** $5 por persona
+* **Frecuencia:** 3 veces al día
+* **Tip:** Sentarse del lado izquierdo para mejores vistas
+
+#### **Transporte 2:**
+* **Ruta:** Ingapirca → Riobamba
+* **Operador:** Cooperativa Patria
+* **Tipo:** Bus ejecutivo
+* **Horario:**
+   * Salida: 2:30 PM
+   * Llegada: 5:30 PM
+* **Duración:** 3 horas
+* **Precio:** $8 por persona
+* **Frecuencia:** 2 veces al día
+* **Tip:** Último bus del día, no perderlo
+
+#### **Actividades cronometradas:**
+* 6:00 AM - 6:45 AM: Desayuno en hotel
+* 8:30 AM - 11:30 AM: Tour ruinas de Ingapirca
+* 11:30 AM - 1:00 PM: Almuerzo comunitario
+* 6:00 PM - 7:00 PM: Check-in hotel Riobamba
+* 7:30 PM - 9:00 PM: Cena en La Rayuela
+
+#### **Alojamiento:**
+* **Hotel:** Hacienda Abraspungo
+* **Categoría:** 4 estrellas
+* **Precio:** $75/noche
+* **Incluye:** Desayuno, WiFi, jardines coloniales
+* **Ubicación:** Zona residencial de Riobamba
+* **Tip:** Pedir habitación con vista al Chimborazo
+
+---
+
+### **Día 5: Martes (Riobamba → Chimborazo → Baños)**
+**Tiempo: Chimborazo 6 horas + Baños tarde/noche**
+
+#### **Transporte 1:**
+* **Ruta:** Riobamba → Chimborazo
+* **Operador:** Tour operador "Julio Verne"
+* **Tipo:** Van turística
+* **Horario:**
+   * Salida: 8:00 AM (Recogida en hotel)
+   * Regreso: 2:00 PM
+* **Duración:** 6 horas total
+* **Precio:** $40 por persona
+* **Incluye:** Guía, transporte, equipo básico
+* **Tip:** Llevar ropa térmica
+
+#### **Transporte 2:**
+* **Ruta:** Chimborazo → Baños
+* **Operador:** Cooperativa Sangay
+* **Tipo:** Bus regular
+* **Horario:**
+   * Salida: 2:30 PM
+   * Llegada: 4:30 PM
+* **Duración:** 2 horas
+* **Precio:** $5 por persona
+* **Frecuencia:** Cada 30 minutos
+* **Tip:** No requiere reserva
+
+#### **Actividades cronometradas:**
+* 7:00 AM - 7:45 AM: Desayuno en hotel
+* 8:00 AM - 12:00 PM: Ascenso y visita Chimborazo
+* 12:00 PM - 1:30 PM: Visita comunidad alpacas
+* 5:00 PM - 8:00 PM: Ruta de las Cascadas
+* 8:30 PM - 10:00 PM: Termas de la Virgen
+
+#### **Alojamiento:**
+* **Hotel:** Sangay Spa Hotel
+* **Categoría:** 4 estrellas
+* **Precio:** $70/noche
+* **Incluye:** Desayuno, acceso a spa
+* **Ubicación:** Centro de Baños
+* **Tip:** Habitaciones con balcón tienen mejor vista
+
+---
+
+### **Día 6: Miércoles (Baños → Quito)**
+**Tiempo: Baños 5 horas + Quito noche**
+
+#### **Transporte:**
+* **Ruta:** Baños → Quito
+* **Operador:** Cooperativa Amazonas
+* **Tipo:** Bus ejecutivo
+* **Horario:**
+   * Salida: 2:00 PM (Terminal Baños)
+   * Llegada: 5:30 PM (Terminal Quitumbe)
+* **Duración:** 3.5 horas
+* **Precio:** $12 por persona
+* **Frecuencia:** Cada hora
+* **Tip:** Servicio ejecutivo disponible por $15
+
+#### **Actividades cronometradas:**
+* 8:00 AM - 9:00 AM: Desayuno en hotel
+* 9:30 AM - 11:30 AM: Casa del Árbol y Columpio
+* 12:00 PM - 1:30 PM: Canopy (opcional)
+* 6:00 PM - 7:00 PM: Check-in hotel Quito
+* 7:30 PM - 9:30 PM: Tour La Ronda nocturna
+
+#### **Alojamiento:**
+* **Hotel:** Casa Gardenia
+* **Categoría:** 3 estrellas superior
+* **Precio:** $60/noche
+* **Incluye:** Desayuno, WiFi, terraza panorámica
+* **Ubicación:** Centro histórico
+* **Tip:** Reservar transfer nocturno del terminal
+
+---
+
+### **Día 7: Jueves (Quito → Galápagos)**
+**Tiempo: Quito mañana + Galápagos tarde/noche**
+
+#### **Transporte Aéreo:**
+* **Ruta:** Quito → Baltra
+* **Aerolínea:** LATAM Ecuador
+* **Tipo:** Vuelo directo
+* **Horario:**
+   * Salida: 9:00 AM (Aeropuerto Mariscal Sucre)
+   * Llegada: 11:30 AM (Aeropuerto Baltra)
+* **Duración:** 2.5 horas
+* **Precio:** $200-250 por persona
+* **Frecuencia:** Diario
+* **Tip:** Check-in online 24h antes
+
+#### **Transportes en Galápagos:**
+* **Aeropuerto → Canal Itabaca:**
+   * Tipo: Bus gratuito
+   * Duración: 10 minutos
+* **Canal → Puerto Ayora:**
+   * Tipo: Ferry + Bus público
+   * Duración: 45 minutos
+   * Precio total: $3
+
+#### **Actividades cronometradas:**
+* 6:00 AM: Transfer hotel → aeropuerto
+* 11:30 AM - 1:00 PM: Traslado a Puerto Ayora
+* 2:00 PM - 5:00 PM: Playa Tortuga Bay
+* 5:30 PM - 7:00 PM: Visita Estación Darwin
+* 7:30 PM - 9:00 PM: Cena en el puerto
+
+#### **Alojamiento:**
+* **Hotel:** Semilla Verde
+* **Categoría:** Boutique Eco-hotel
+* **Precio:** $200/noche
+* **Incluye:** Desayuno, WiFi, tour de instalaciones
+* **Ubicación:** Santa Cruz
+* **Tip:** Reservar con anticipación en temporada alta
+
+---
+
+### **Día 8: Viernes (Galápagos → Guayaquil)**
+**Tiempo: Galápagos 8 horas + Guayaquil tarde**
+
+#### **Transporte Aéreo:**
+* **Ruta:** Baltra → Guayaquil
+* **Aerolínea:** LATAM Ecuador
+* **Tipo:** Vuelo directo
+* **Horario:**
+   * Salida: 2:00 PM
+   * Llegada: 4:00 PM
+* **Duración:** 2 horas
+* **Precio:** $180-220 por persona
+* **Tip:** Coordinar transfer hotel → aeropuerto
+
+#### **Actividades cronometradas:**
+* 7:00 AM - 8:00 AM: Desayuno
+* 8:30 AM - 12:30 PM: Tour de Bahía
+   * Incluye: Snorkel, avistamiento fauna
+   * Precio: $60 por persona
+* 1:00 PM: Transfer a aeropuerto
+* 4:30 PM - 6:00 PM: Malecón 2000 
+* 6:30 PM - 8:00 PM: Cena en Puerto Santa Ana
+
+
+### **Tips de Transporte:**
+
+#### **Aerolíneas nacionales (calidad-precio):**
+1. **LATAM Ecuador**
+   - Mejor red de rutas
+   - Precios competitivos
+   - Programa de fidelización
+   
+2. **Avianca Ecuador**
+   - Más puntual
+   - Servicio superior
+   - Precios más altos
+
+3. **Equinoxial**
+   - Nuevos en la ruta a Galápagos
+   - Precios promocionales frecuentes
+
+#### **Cooperativas de Bus Recomendadas:**
+1. **Cooperativa Loja Internacional**
+   - Flota moderna
+   - Asientos reclinables
+   - WiFi en algunas unidades
+
+2. **Cooperativa Amazonas**
+   - Servicio ejecutivo disponible
+   - Paradas programadas
+   - Sistema de reservas en línea
+
+3. **Cooperativa Patria**
+   - Puntualidad
+   - Buses bien mantenidos
+   - Buenos precios
+
+#### **Consejos Generales:**
+- Comprar pasajes de bus en la mañana para viajes largos
+- Llevar efectivo para buses intercantonales
+- Reservar vuelos a Galápagos con 2-3 meses de anticipación
+- Considerar seguros de viaje que cubran cancelaciones
+- Guardar los números de contacto de las cooperativas
+
+#### **Tips de Tiempo:**
+- Los tiempos de traslado incluyen márgenes para imprevistos
+- Se recomienda llegar 15 minutos antes a tours programados
+- Considerar 1 hora adicional para check-in/check-out en hoteles
+- Tiempo flexible para comidas según preferencias
+- Incluir pausas de descanso entre actividades
+
+
+### **Presupuesto para Dos Personas:**
+
+| **Categoría**          | **Costo Aprox. (USD)** |
+|------------------------|------------------------|
+| Transporte terrestre   | $250                  |
+| Vuelos (inc. Galápagos)| $900                  |
+| Alojamiento            | $1,000                |
+| Alimentación           | $500                  |
+| Actividades y entradas | $500                  |
+| **Total**              | **$3,150**            |
+

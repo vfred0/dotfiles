@@ -30,7 +30,7 @@ chipset_temperture() {
 
   # value=$(sensors | awk '/Tctl:/ { print $2 }' | cut -c2- | sed 's/°C//')
 
-  show "CHIPSET" "$(get_without_decimal $value)°C"
+  show "CHITEM" "$(get_without_decimal $value)°C"
 }
 
 vram() {
@@ -43,7 +43,7 @@ vram() {
 
 temperature(){
   value=$(sensors | grep 'edge:' | awk '{ print $2 }' 2>/dev/null | sed 's/+//')
-  show "TEMP" "$(get_without_decimal $value)°C"
+  show "CPUTEM" "$(get_without_decimal $value)°C"
 }
 
 pkg_updates() {

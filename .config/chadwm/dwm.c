@@ -1465,7 +1465,6 @@ void dragmfact(const Arg *arg) {
   while (XCheckMaskEvent(dpy, EnterWindowMask, &ev))
     ;
 }
-
 void drawbar(Monitor *m) {
   int x, y = borderpx, w, sw = 0, stw = 0;
   int bh_n = bh - borderpx * 2;
@@ -1481,6 +1480,7 @@ void drawbar(Monitor *m) {
   Client *c;
 
   XSetForeground(drw->dpy, drw->gc, clrborder.pixel);
+
   if(floatbar){
     XFillRectangle(drw->dpy, drw->drawable, drw->gc, 0, 0, m->ww - m->gappov * 2, bh);
   }else{

@@ -1,1 +1,1 @@
- pacman -S libxinerama fontconfig imlib2 libxft 
+pacman -S libxinerama fontconfig imlib2 libxft 
